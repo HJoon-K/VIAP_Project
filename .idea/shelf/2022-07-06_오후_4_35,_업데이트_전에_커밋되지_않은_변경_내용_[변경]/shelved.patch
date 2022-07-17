@@ -1,0 +1,4689 @@
+Index: .idea/dataSources/a63b4271-cded-414a-972f-743303cd0ce4.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources/a63b4271-cded-414a-972f-743303cd0ce4.xml b/.idea/dataSources/a63b4271-cded-414a-972f-743303cd0ce4.xml
+new file mode 100644
+--- /dev/null	(date 1657086889785)
++++ b/.idea/dataSources/a63b4271-cded-414a-972f-743303cd0ce4.xml	(date 1657086889785)
+@@ -0,0 +1,1286 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<dataSource name="db">
++  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.38">
++    <root id="1"/>
++    <collation id="2" parent="1" name="BINARY"/>
++    <collation id="3" parent="1" name="NOCASE"/>
++    <collation id="4" parent="1" name="RTRIM"/>
++    <package id="5" parent="1" name="fts3"/>
++    <package id="6" parent="1" name="fts3tokenize"/>
++    <package id="7" parent="1" name="fts4"/>
++    <package id="8" parent="1" name="fts4aux"/>
++    <package id="9" parent="1" name="fts5"/>
++    <package id="10" parent="1" name="fts5vocab"/>
++    <package id="11" parent="1" name="json_each"/>
++    <package id="12" parent="1" name="json_tree"/>
++    <package id="13" parent="1" name="rtree"/>
++    <package id="14" parent="1" name="rtree_i32"/>
++    <routine id="15" parent="1" name="abs">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="16" parent="1" name="acos"/>
++    <routine id="17" parent="1" name="acosh"/>
++    <routine id="18" parent="1" name="asin"/>
++    <routine id="19" parent="1" name="asinh"/>
++    <routine id="20" parent="1" name="atan"/>
++    <routine id="21" parent="1" name="atan2"/>
++    <routine id="22" parent="1" name="atanh"/>
++    <routine id="23" parent="1" name="atn2"/>
++    <routine id="24" parent="1" name="avg">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="25" parent="1" name="bm25">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="26" parent="1" name="ceil"/>
++    <routine id="27" parent="1" name="changes"/>
++    <routine id="28" parent="1" name="char">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="29" parent="1" name="charindex"/>
++    <routine id="30" parent="1" name="charindex"/>
++    <routine id="31" parent="1" name="coalesce">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="32" parent="1" name="cos"/>
++    <routine id="33" parent="1" name="cosh"/>
++    <routine id="34" parent="1" name="cot"/>
++    <routine id="35" parent="1" name="coth"/>
++    <routine id="36" parent="1" name="count">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="37" parent="1" name="cume_dist">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="38" parent="1" name="current_date"/>
++    <routine id="39" parent="1" name="current_time"/>
++    <routine id="40" parent="1" name="current_timestamp"/>
++    <routine id="41" parent="1" name="date">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="42" parent="1" name="datetime">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="43" parent="1" name="degrees"/>
++    <routine id="44" parent="1" name="dense_rank">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="45" parent="1" name="difference"/>
++    <routine id="46" parent="1" name="exp"/>
++    <routine id="47" parent="1" name="first_value">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="48" parent="1" name="floor"/>
++    <routine id="49" parent="1" name="fts3_tokenizer"/>
++    <routine id="50" parent="1" name="fts3_tokenizer"/>
++    <routine id="51" parent="1" name="fts5"/>
++    <routine id="52" parent="1" name="fts5_source_id"/>
++    <routine id="53" parent="1" name="glob">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="54" parent="1" name="group_concat">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="55" parent="1" name="hex">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="56" parent="1" name="highlight">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="57" parent="1" name="ifnull">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="58" parent="1" name="iif">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="59" parent="1" name="instr">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="60" parent="1" name="json">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="61" parent="1" name="json_array">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="62" parent="1" name="json_array_length">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="63" parent="1" name="json_array_length">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="64" parent="1" name="json_extract">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="65" parent="1" name="json_group_array">
++      <Deterministic>1</Deterministic>
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="66" parent="1" name="json_group_object">
++      <Deterministic>1</Deterministic>
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="67" parent="1" name="json_insert">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="68" parent="1" name="json_object">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="69" parent="1" name="json_patch">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="70" parent="1" name="json_quote">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="71" parent="1" name="json_remove">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="72" parent="1" name="json_replace">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="73" parent="1" name="json_set">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="74" parent="1" name="json_type">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="75" parent="1" name="json_type">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="76" parent="1" name="json_valid">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="77" parent="1" name="julianday">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="78" parent="1" name="lag">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="79" parent="1" name="lag">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="80" parent="1" name="last_insert_rowid"/>
++    <routine id="81" parent="1" name="last_value">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="82" parent="1" name="lead">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="83" parent="1" name="lead">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="84" parent="1" name="leftstr"/>
++    <routine id="85" parent="1" name="length">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="86" parent="1" name="like">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="87" parent="1" name="likelihood">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="88" parent="1" name="likely">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="89" parent="1" name="load_extension"/>
++    <routine id="90" parent="1" name="log"/>
++    <routine id="91" parent="1" name="log10"/>
++    <routine id="92" parent="1" name="lower">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="93" parent="1" name="lower_quartile">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="94" parent="1" name="ltrim">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="95" parent="1" name="match"/>
++    <routine id="96" parent="1" name="matchinfo"/>
++    <routine id="97" parent="1" name="matchinfo"/>
++    <routine id="98" parent="1" name="max">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="99" parent="1" name="max">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="100" parent="1" name="median">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="101" parent="1" name="min">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="102" parent="1" name="min">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="103" parent="1" name="mode">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="104" parent="1" name="nth_value">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="105" parent="1" name="ntile">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="106" parent="1" name="nullif">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="107" parent="1" name="offsets"/>
++    <routine id="108" parent="1" name="optimize"/>
++    <routine id="109" parent="1" name="padc"/>
++    <routine id="110" parent="1" name="padl"/>
++    <routine id="111" parent="1" name="padr"/>
++    <routine id="112" parent="1" name="percent_rank">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="113" parent="1" name="pi"/>
++    <routine id="114" parent="1" name="power"/>
++    <routine id="115" parent="1" name="printf">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="116" parent="1" name="proper"/>
++    <routine id="117" parent="1" name="quote">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="118" parent="1" name="radians"/>
++    <routine id="119" parent="1" name="random"/>
++    <routine id="120" parent="1" name="randomblob"/>
++    <routine id="121" parent="1" name="rank">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="122" parent="1" name="regexp">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="123" parent="1" name="replace">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="124" parent="1" name="replicate"/>
++    <routine id="125" parent="1" name="reverse"/>
++    <routine id="126" parent="1" name="rightstr"/>
++    <routine id="127" parent="1" name="round">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="128" parent="1" name="row_number">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="129" parent="1" name="rtreecheck">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="130" parent="1" name="rtreedepth"/>
++    <routine id="131" parent="1" name="rtreenode"/>
++    <routine id="132" parent="1" name="rtrim">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="133" parent="1" name="sign">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="134" parent="1" name="sin"/>
++    <routine id="135" parent="1" name="sinh"/>
++    <routine id="136" parent="1" name="snippet">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="137" parent="1" name="sqlite_compileoption_get"/>
++    <routine id="138" parent="1" name="sqlite_compileoption_used"/>
++    <routine id="139" parent="1" name="sqlite_log">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="140" parent="1" name="sqlite_source_id"/>
++    <routine id="141" parent="1" name="sqlite_version"/>
++    <routine id="142" parent="1" name="sqrt"/>
++    <routine id="143" parent="1" name="square"/>
++    <routine id="144" parent="1" name="stdev">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="145" parent="1" name="strfilter"/>
++    <routine id="146" parent="1" name="strftime">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="147" parent="1" name="substr">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="148" parent="1" name="substring">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="149" parent="1" name="sum">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="150" parent="1" name="tan"/>
++    <routine id="151" parent="1" name="tanh"/>
++    <routine id="152" parent="1" name="time">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="153" parent="1" name="total">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="154" parent="1" name="total_changes"/>
++    <routine id="155" parent="1" name="trim">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="156" parent="1" name="typeof">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="157" parent="1" name="unicode">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="158" parent="1" name="unlikely">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="159" parent="1" name="upper">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="160" parent="1" name="upper_quartile">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="161" parent="1" name="variance">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="162" parent="1" name="zeroblob">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <schema id="163" parent="1" name="main">
++      <Current>1</Current>
++    </schema>
++    <argument id="164" parent="15">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="165" parent="15">
++      <Position>1</Position>
++    </argument>
++    <argument id="166" parent="16">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="167" parent="16">
++      <Position>1</Position>
++    </argument>
++    <argument id="168" parent="17">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="169" parent="17">
++      <Position>1</Position>
++    </argument>
++    <argument id="170" parent="18">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="171" parent="18">
++      <Position>1</Position>
++    </argument>
++    <argument id="172" parent="19">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="173" parent="19">
++      <Position>1</Position>
++    </argument>
++    <argument id="174" parent="20">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="175" parent="20">
++      <Position>1</Position>
++    </argument>
++    <argument id="176" parent="21">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="177" parent="21">
++      <Position>1</Position>
++    </argument>
++    <argument id="178" parent="21">
++      <Position>2</Position>
++    </argument>
++    <argument id="179" parent="22">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="180" parent="22">
++      <Position>1</Position>
++    </argument>
++    <argument id="181" parent="23">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="182" parent="23">
++      <Position>1</Position>
++    </argument>
++    <argument id="183" parent="23">
++      <Position>2</Position>
++    </argument>
++    <argument id="184" parent="24">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="185" parent="24">
++      <Position>1</Position>
++    </argument>
++    <argument id="186" parent="25">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="187" parent="26">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="188" parent="26">
++      <Position>1</Position>
++    </argument>
++    <argument id="189" parent="27">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="190" parent="28">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="191" parent="29">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="192" parent="29">
++      <Position>1</Position>
++    </argument>
++    <argument id="193" parent="29">
++      <Position>2</Position>
++    </argument>
++    <argument id="194" parent="30">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="195" parent="30">
++      <Position>1</Position>
++    </argument>
++    <argument id="196" parent="30">
++      <Position>2</Position>
++    </argument>
++    <argument id="197" parent="30">
++      <Position>3</Position>
++    </argument>
++    <argument id="198" parent="31">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="199" parent="32">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="200" parent="32">
++      <Position>1</Position>
++    </argument>
++    <argument id="201" parent="33">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="202" parent="33">
++      <Position>1</Position>
++    </argument>
++    <argument id="203" parent="34">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="204" parent="34">
++      <Position>1</Position>
++    </argument>
++    <argument id="205" parent="35">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="206" parent="35">
++      <Position>1</Position>
++    </argument>
++    <argument id="207" parent="36">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="208" parent="36">
++      <Position>1</Position>
++    </argument>
++    <argument id="209" parent="37">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="210" parent="38">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="211" parent="39">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="212" parent="40">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="213" parent="41">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="214" parent="42">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="215" parent="43">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="216" parent="43">
++      <Position>1</Position>
++    </argument>
++    <argument id="217" parent="44">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="218" parent="45">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="219" parent="45">
++      <Position>1</Position>
++    </argument>
++    <argument id="220" parent="45">
++      <Position>2</Position>
++    </argument>
++    <argument id="221" parent="46">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="222" parent="46">
++      <Position>1</Position>
++    </argument>
++    <argument id="223" parent="47">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="224" parent="47">
++      <Position>1</Position>
++    </argument>
++    <argument id="225" parent="48">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="226" parent="48">
++      <Position>1</Position>
++    </argument>
++    <argument id="227" parent="49">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="228" parent="49">
++      <Position>1</Position>
++    </argument>
++    <argument id="229" parent="50">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="230" parent="50">
++      <Position>1</Position>
++    </argument>
++    <argument id="231" parent="50">
++      <Position>2</Position>
++    </argument>
++    <argument id="232" parent="51">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="233" parent="51">
++      <Position>1</Position>
++    </argument>
++    <argument id="234" parent="52">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="235" parent="53">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="236" parent="53">
++      <Position>1</Position>
++    </argument>
++    <argument id="237" parent="53">
++      <Position>2</Position>
++    </argument>
++    <argument id="238" parent="54">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="239" parent="54">
++      <Position>1</Position>
++    </argument>
++    <argument id="240" parent="54">
++      <Position>2</Position>
++    </argument>
++    <argument id="241" parent="55">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="242" parent="55">
++      <Position>1</Position>
++    </argument>
++    <argument id="243" parent="56">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="244" parent="57">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="245" parent="57">
++      <Position>1</Position>
++    </argument>
++    <argument id="246" parent="57">
++      <Position>2</Position>
++    </argument>
++    <argument id="247" parent="58">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="248" parent="58">
++      <Position>1</Position>
++    </argument>
++    <argument id="249" parent="58">
++      <Position>2</Position>
++    </argument>
++    <argument id="250" parent="58">
++      <Position>3</Position>
++    </argument>
++    <argument id="251" parent="59">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="252" parent="59">
++      <Position>1</Position>
++    </argument>
++    <argument id="253" parent="59">
++      <Position>2</Position>
++    </argument>
++    <argument id="254" parent="60">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="255" parent="60">
++      <Position>1</Position>
++    </argument>
++    <argument id="256" parent="61">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="257" parent="62">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="258" parent="62">
++      <Position>1</Position>
++    </argument>
++    <argument id="259" parent="63">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="260" parent="63">
++      <Position>1</Position>
++    </argument>
++    <argument id="261" parent="63">
++      <Position>2</Position>
++    </argument>
++    <argument id="262" parent="64">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="263" parent="65">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="264" parent="65">
++      <Position>1</Position>
++    </argument>
++    <argument id="265" parent="66">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="266" parent="66">
++      <Position>1</Position>
++    </argument>
++    <argument id="267" parent="66">
++      <Position>2</Position>
++    </argument>
++    <argument id="268" parent="67">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="269" parent="68">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="270" parent="69">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="271" parent="69">
++      <Position>1</Position>
++    </argument>
++    <argument id="272" parent="69">
++      <Position>2</Position>
++    </argument>
++    <argument id="273" parent="70">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="274" parent="70">
++      <Position>1</Position>
++    </argument>
++    <argument id="275" parent="71">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="276" parent="72">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="277" parent="73">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="278" parent="74">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="279" parent="74">
++      <Position>1</Position>
++    </argument>
++    <argument id="280" parent="75">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="281" parent="75">
++      <Position>1</Position>
++    </argument>
++    <argument id="282" parent="75">
++      <Position>2</Position>
++    </argument>
++    <argument id="283" parent="76">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="284" parent="76">
++      <Position>1</Position>
++    </argument>
++    <argument id="285" parent="77">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="286" parent="78">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="287" parent="78">
++      <Position>1</Position>
++    </argument>
++    <argument id="288" parent="78">
++      <Position>2</Position>
++    </argument>
++    <argument id="289" parent="79">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="290" parent="79">
++      <Position>1</Position>
++    </argument>
++    <argument id="291" parent="79">
++      <Position>2</Position>
++    </argument>
++    <argument id="292" parent="79">
++      <Position>3</Position>
++    </argument>
++    <argument id="293" parent="80">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="294" parent="81">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="295" parent="81">
++      <Position>1</Position>
++    </argument>
++    <argument id="296" parent="82">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="297" parent="82">
++      <Position>1</Position>
++    </argument>
++    <argument id="298" parent="82">
++      <Position>2</Position>
++    </argument>
++    <argument id="299" parent="83">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="300" parent="83">
++      <Position>1</Position>
++    </argument>
++    <argument id="301" parent="83">
++      <Position>2</Position>
++    </argument>
++    <argument id="302" parent="83">
++      <Position>3</Position>
++    </argument>
++    <argument id="303" parent="84">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="304" parent="84">
++      <Position>1</Position>
++    </argument>
++    <argument id="305" parent="84">
++      <Position>2</Position>
++    </argument>
++    <argument id="306" parent="85">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="307" parent="85">
++      <Position>1</Position>
++    </argument>
++    <argument id="308" parent="86">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="309" parent="86">
++      <Position>1</Position>
++    </argument>
++    <argument id="310" parent="86">
++      <Position>2</Position>
++    </argument>
++    <argument id="311" parent="86">
++      <Position>3</Position>
++    </argument>
++    <argument id="312" parent="87">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="313" parent="87">
++      <Position>1</Position>
++    </argument>
++    <argument id="314" parent="87">
++      <Position>2</Position>
++    </argument>
++    <argument id="315" parent="88">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="316" parent="88">
++      <Position>1</Position>
++    </argument>
++    <argument id="317" parent="89">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="318" parent="89">
++      <Position>1</Position>
++    </argument>
++    <argument id="319" parent="89">
++      <Position>2</Position>
++    </argument>
++    <argument id="320" parent="90">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="321" parent="90">
++      <Position>1</Position>
++    </argument>
++    <argument id="322" parent="91">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="323" parent="91">
++      <Position>1</Position>
++    </argument>
++    <argument id="324" parent="92">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="325" parent="92">
++      <Position>1</Position>
++    </argument>
++    <argument id="326" parent="93">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="327" parent="93">
++      <Position>1</Position>
++    </argument>
++    <argument id="328" parent="94">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="329" parent="94">
++      <Position>1</Position>
++    </argument>
++    <argument id="330" parent="94">
++      <Position>2</Position>
++    </argument>
++    <argument id="331" parent="95">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="332" parent="95">
++      <Position>1</Position>
++    </argument>
++    <argument id="333" parent="95">
++      <Position>2</Position>
++    </argument>
++    <argument id="334" parent="96">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="335" parent="96">
++      <Position>1</Position>
++    </argument>
++    <argument id="336" parent="97">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="337" parent="97">
++      <Position>1</Position>
++    </argument>
++    <argument id="338" parent="97">
++      <Position>2</Position>
++    </argument>
++    <argument id="339" parent="98">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="340" parent="99">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="341" parent="99">
++      <Position>1</Position>
++    </argument>
++    <argument id="342" parent="100">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="343" parent="100">
++      <Position>1</Position>
++    </argument>
++    <argument id="344" parent="101">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="345" parent="102">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="346" parent="102">
++      <Position>1</Position>
++    </argument>
++    <argument id="347" parent="103">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="348" parent="103">
++      <Position>1</Position>
++    </argument>
++    <argument id="349" parent="104">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="350" parent="104">
++      <Position>1</Position>
++    </argument>
++    <argument id="351" parent="104">
++      <Position>2</Position>
++    </argument>
++    <argument id="352" parent="105">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="353" parent="105">
++      <Position>1</Position>
++    </argument>
++    <argument id="354" parent="106">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="355" parent="106">
++      <Position>1</Position>
++    </argument>
++    <argument id="356" parent="106">
++      <Position>2</Position>
++    </argument>
++    <argument id="357" parent="107">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="358" parent="107">
++      <Position>1</Position>
++    </argument>
++    <argument id="359" parent="108">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="360" parent="108">
++      <Position>1</Position>
++    </argument>
++    <argument id="361" parent="109">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="362" parent="109">
++      <Position>1</Position>
++    </argument>
++    <argument id="363" parent="109">
++      <Position>2</Position>
++    </argument>
++    <argument id="364" parent="110">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="365" parent="110">
++      <Position>1</Position>
++    </argument>
++    <argument id="366" parent="110">
++      <Position>2</Position>
++    </argument>
++    <argument id="367" parent="111">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="368" parent="111">
++      <Position>1</Position>
++    </argument>
++    <argument id="369" parent="111">
++      <Position>2</Position>
++    </argument>
++    <argument id="370" parent="112">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="371" parent="113">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="372" parent="114">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="373" parent="114">
++      <Position>1</Position>
++    </argument>
++    <argument id="374" parent="114">
++      <Position>2</Position>
++    </argument>
++    <argument id="375" parent="115">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="376" parent="116">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="377" parent="116">
++      <Position>1</Position>
++    </argument>
++    <argument id="378" parent="117">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="379" parent="117">
++      <Position>1</Position>
++    </argument>
++    <argument id="380" parent="118">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="381" parent="118">
++      <Position>1</Position>
++    </argument>
++    <argument id="382" parent="119">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="383" parent="120">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="384" parent="120">
++      <Position>1</Position>
++    </argument>
++    <argument id="385" parent="121">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="386" parent="122">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="387" parent="123">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="388" parent="123">
++      <Position>1</Position>
++    </argument>
++    <argument id="389" parent="123">
++      <Position>2</Position>
++    </argument>
++    <argument id="390" parent="123">
++      <Position>3</Position>
++    </argument>
++    <argument id="391" parent="124">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="392" parent="124">
++      <Position>1</Position>
++    </argument>
++    <argument id="393" parent="124">
++      <Position>2</Position>
++    </argument>
++    <argument id="394" parent="125">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="395" parent="125">
++      <Position>1</Position>
++    </argument>
++    <argument id="396" parent="126">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="397" parent="126">
++      <Position>1</Position>
++    </argument>
++    <argument id="398" parent="126">
++      <Position>2</Position>
++    </argument>
++    <argument id="399" parent="127">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="400" parent="127">
++      <Position>1</Position>
++    </argument>
++    <argument id="401" parent="127">
++      <Position>2</Position>
++    </argument>
++    <argument id="402" parent="128">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="403" parent="129">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="404" parent="130">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="405" parent="130">
++      <Position>1</Position>
++    </argument>
++    <argument id="406" parent="131">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="407" parent="131">
++      <Position>1</Position>
++    </argument>
++    <argument id="408" parent="131">
++      <Position>2</Position>
++    </argument>
++    <argument id="409" parent="132">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="410" parent="132">
++      <Position>1</Position>
++    </argument>
++    <argument id="411" parent="132">
++      <Position>2</Position>
++    </argument>
++    <argument id="412" parent="133">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="413" parent="133">
++      <Position>1</Position>
++    </argument>
++    <argument id="414" parent="134">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="415" parent="134">
++      <Position>1</Position>
++    </argument>
++    <argument id="416" parent="135">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="417" parent="135">
++      <Position>1</Position>
++    </argument>
++    <argument id="418" parent="136">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="419" parent="137">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="420" parent="137">
++      <Position>1</Position>
++    </argument>
++    <argument id="421" parent="138">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="422" parent="138">
++      <Position>1</Position>
++    </argument>
++    <argument id="423" parent="139">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="424" parent="139">
++      <Position>1</Position>
++    </argument>
++    <argument id="425" parent="139">
++      <Position>2</Position>
++    </argument>
++    <argument id="426" parent="140">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="427" parent="141">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="428" parent="142">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="429" parent="142">
++      <Position>1</Position>
++    </argument>
++    <argument id="430" parent="143">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="431" parent="143">
++      <Position>1</Position>
++    </argument>
++    <argument id="432" parent="144">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="433" parent="144">
++      <Position>1</Position>
++    </argument>
++    <argument id="434" parent="145">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="435" parent="145">
++      <Position>1</Position>
++    </argument>
++    <argument id="436" parent="145">
++      <Position>2</Position>
++    </argument>
++    <argument id="437" parent="146">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="438" parent="147">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="439" parent="147">
++      <Position>1</Position>
++    </argument>
++    <argument id="440" parent="147">
++      <Position>2</Position>
++    </argument>
++    <argument id="441" parent="147">
++      <Position>3</Position>
++    </argument>
++    <argument id="442" parent="148">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="443" parent="148">
++      <Position>1</Position>
++    </argument>
++    <argument id="444" parent="148">
++      <Position>2</Position>
++    </argument>
++    <argument id="445" parent="148">
++      <Position>3</Position>
++    </argument>
++    <argument id="446" parent="149">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="447" parent="149">
++      <Position>1</Position>
++    </argument>
++    <argument id="448" parent="150">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="449" parent="150">
++      <Position>1</Position>
++    </argument>
++    <argument id="450" parent="151">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="451" parent="151">
++      <Position>1</Position>
++    </argument>
++    <argument id="452" parent="152">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="453" parent="153">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="454" parent="153">
++      <Position>1</Position>
++    </argument>
++    <argument id="455" parent="154">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="456" parent="155">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="457" parent="155">
++      <Position>1</Position>
++    </argument>
++    <argument id="458" parent="155">
++      <Position>2</Position>
++    </argument>
++    <argument id="459" parent="156">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="460" parent="156">
++      <Position>1</Position>
++    </argument>
++    <argument id="461" parent="157">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="462" parent="157">
++      <Position>1</Position>
++    </argument>
++    <argument id="463" parent="158">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="464" parent="158">
++      <Position>1</Position>
++    </argument>
++    <argument id="465" parent="159">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="466" parent="159">
++      <Position>1</Position>
++    </argument>
++    <argument id="467" parent="160">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="468" parent="160">
++      <Position>1</Position>
++    </argument>
++    <argument id="469" parent="161">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="470" parent="161">
++      <Position>1</Position>
++    </argument>
++    <argument id="471" parent="162">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="472" parent="162">
++      <Position>1</Position>
++    </argument>
++  </database-model>
++</dataSource>
+\ No newline at end of file
+Index: .idea/runConfigurations/VIAP_Project.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/runConfigurations/VIAP_Project.xml b/.idea/runConfigurations/VIAP_Project.xml
+new file mode 100644
+--- /dev/null	(date 1657001826725)
++++ b/.idea/runConfigurations/VIAP_Project.xml	(date 1657001826725)
+@@ -0,0 +1,26 @@
++<component name="ProjectRunConfigurationManager">
++  <configuration default="false" name="VIAP_Project" type="Python.DjangoServer" factoryName="Django server" singleton="false">
++    <module name="VIAP_Project" />
++    <option name="INTERPRETER_OPTIONS" value="" />
++    <option name="PARENT_ENVS" value="true" />
++    <envs>
++      <env name="PYTHONUNBUFFERED" value="1" />
++      <env name="DJANGO_SETTINGS_MODULE" value="VIAP_Project.settings" />
++    </envs>
++    <option name="SDK_HOME" value="C:\Users\bigdata.DESKTOP-RIJG1CD\py38\Scripts\python.exe" />
++    <option name="WORKING_DIRECTORY" value="" />
++    <option name="IS_MODULE_SDK" value="false" />
++    <option name="ADD_CONTENT_ROOTS" value="true" />
++    <option name="ADD_SOURCE_ROOTS" value="true" />
++    <option name="launchJavascriptDebuger" value="false" />
++    <option name="port" value="8000" />
++    <option name="host" value="127.0.0.1" />
++    <option name="additionalOptions" value="" />
++    <option name="browserUrl" value="" />
++    <option name="runTestServer" value="false" />
++    <option name="runNoReload" value="false" />
++    <option name="useCustomRunCommand" value="false" />
++    <option name="customRunCommand" value="" />
++    <method v="2" />
++  </configuration>
++</component>
+\ No newline at end of file
+Index: .idea/shelf/2022-07-06_오후_4_10,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/2022-07-06_오후_4_10,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch b/.idea/shelf/2022-07-06_오후_4_10,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1657091424659)
++++ b/.idea/shelf/2022-07-06_오후_4_10,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch	(date 1657091424659)
+@@ -0,0 +1,1077 @@
++Index: templates/question/question.html
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>{% extends 'layout/base.html' %}\r\n{% load static %}\r\n{% block style %}\r\n    <style>\r\n        div label:first-child{font-weight: bold}\r\n\r\n    </style>\r\n{% endblock %}\r\n{% block content %}\r\n\r\n    <div class=\"card card-body bg-light\">\r\n    <div class=\"d-flex\">\r\n                 <form name=\"quefrm\" method=\"post\">\r\n                {% csrf_token %}\r\n                <h2>고객문의 접수</h2>\r\n                <div class=\"row mt-5\">\r\n                    <label for=\"qname\" class=\"col-form-label col-2 text-end \">이름</label>\r\n                    <div class=\"col-5\">\r\n                        <input type=\"text\" name=\"qname\" id=\"qname\" class=\"form-control\" >\r\n                    </div>\r\n                </div>\r\n                <div class=\"row mt-3\">\r\n                    <label for=\"qphone\" class=\"col-form-label col-2 text-end \">전화번호</label>\r\n                    <div class=\"col-5\">\r\n                        <input type=\"text\" name=\"qphone\" id=\"qphone\" class=\"form-control\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"row mt-3\">\r\n                    <label for=\"qemail\" class=\"col-form-label col-2 text-end \">이메일</label>\r\n                    <div class=\"col-5\">\r\n                        <input type=\"text\" name=\"qemail\" id=\"qemail\" class=\"form-control\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"row mt-3\">\r\n                    <label for=\"qselect\" class=\"col-form-label col-2 text-end \">분류</label>\r\n                    <div class=\"col-3 d-flex flex-row\">\r\n                        <select class=\"form-select w-auto\" id=\"qselect\" name=\"qselect\">\r\n                            <option>선택하세요</option>\r\n                            <option>개인고객 서비스 문의</option>\r\n                            <option>기업고객 서비스 문의</option>\r\n                            <option>제휴협력 문의</option>\r\n                            <option>기타</option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row mt-3\">\r\n                    <label for=\"qsubject\" class=\"col-form-label col-2 text-end \">제목</label>\r\n                    <div class=\"col-10\">\r\n                        <input type=\"text\" id=\"qsubject\" name=\"qsubject\" class=\"form-control\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"row mt-3\">\r\n                    <label for=\"qtext\" class=\"col-form-label col-2 text-end \">내용</label>\r\n                    <div class=\"col-3\">\r\n                        <textarea class=\"form-control\" style=\"width: 500px; height: 200px\" name=\"qtext\" id=\"qtext\" ></textarea>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row mt-3\">\r\n                    <label for=\"qfile\" class=\"col-form-label col-2 text-end\">첨부 파일</label>\r\n                    <div class=\"col-3\">\r\n                        <input type=\"file\" name=\"qfile\" id=\"qfile\">\r\n                    </div>\r\n                </div>\r\n\r\n            </form>\r\n        <div><img src=\"{% static '/imgs/q7.png' %}\" style=\"width: 90%; margin: 20%\"></div>\r\n    </div>\r\n        <div class=\"text-center\">\r\n                        <button type=\"button\" class=\"btn btn-primary\" id=\"qbtn\">\r\n                            <i class=\"bi bi-check\"></i> 문의 접수하기</button>\r\n        </div>\r\n    </div>\r\n    <div id=\"qsub\" class=\"mt-5\">\r\n        <div class=\"row list\">\r\n            <div class=\"col-sm-4 text-center\">\r\n                <img src=\"{% static '/imgs/q1.PNG' %}\">\r\n                <h2><a href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#qmodal\" class=\"text-dark text-decoration-none\">실시간 채팅</a></h2>\r\n                <p>컴퓨터, 스마트폰을 이용해 상담원과 즉시 상담이 가능합니다. 퇴근 후 약속이 없는 직원이 업무시간 외에도 상담을 진행해드릴 수도 있습니다. 연락처를 남겨주시면 가능한 시간대에 상담을 진행해드립니다.</p>\r\n\r\n            </div>\r\n            <div class=\"col-sm-4 text-center mt-2\">\r\n                <img src=\"{% static '/imgs/q2.PNG' %}\">\r\n                <h2>전화문의</h2>\r\n                <p>가장 많은 고객께서 이용하고 계신 방법이며, 이용고객이 많으시기 때문에 대기하실 수 있는 단점이 있습니다. 상담원의 목소리는 거칠 수 있음을 부디 양해바랍니다.</p>\r\n                <p class=\"fw-bold text-center\">010-8781-9459</p>\r\n\r\n            </div>\r\n            <div class=\"col-sm-4 text-center\">\r\n                <img src=\"{% static '/imgs/q3.PNG' %}\">\r\n                <h2><a href=\"{% url 'faq' %}\" class=\"text-dark text-decoration-none\">FAQ</a></h2>\r\n                <p>많은 고객님께서 가장 자주 문의하시는 내용을 정리해두었습니다. 질문 전에 확인을 해보시는 것도 좋은 방법입니다. 지속적으로 업데이트가 될 수 있도록 많이 노력하고 있습니다.</p>\r\n\r\n            </div>\r\n            <div class=\"col-sm-4 mt-3 mb-5 text-center\">\r\n                <img src=\"{% static '/imgs/q4.PNG' %}\">\r\n                <h2>Social</h2>\r\n                <p>운영하는 블로그, SNS를 통해 케이엠디에스와 연결하실 수 있습니다. 응대시간이 길어질 수 있는 단점이 있습니다.</p>\r\n\r\n            </div>\r\n            <div class=\"col-sm-4 mt-5 text-center\">\r\n                <img src=\"{% static '/imgs/q5.PNG' %}\">\r\n                <h2>고객지원 포털</h2>\r\n                <p>서비스를 이용하신 고객을 대상으로 서비스를 제공할 계획입니다.\r\n                그 동안 고객님들께서 바라는 바를 남겨주신 내용을 토대로 만들어지고 있습니다.</p>\r\n\r\n            </div>\r\n            <div class=\"col-sm-4 mt-5 text-center\">\r\n                <img src=\"{% static '/imgs/q6.PNG' %}\">\r\n                <h2>1:1 고객지원</h2>\r\n                <p>서비스를 이용하신 고객을 대상으로 서비스를 제공할 계획입니다. 2020년 현재 여전히 계획을 가지고 있기만 한 상태입니다. 죄송합니다</p>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n  </div>\r\n\r\n{% include 'question/qmodal.html' %}\r\n{% endblock %}\r\n{% block script %}\r\n    <script>\r\n        const qbtn =document.querySelector('#qbtn');\r\n        qbtn.addEventListener('click',()=>{\r\n           const frm=document.quefrm;\r\n           if(frm.qname.value =='') alert('이름을 작성하세요')\r\n           else if(frm.qphone.value =='') alert('전화번호를 작성하세요')\r\n           else if(frm.qemail.value =='') alert('이메일주소를 작성하세요')\r\n           else if(frm.qselect.value =='선택하세요') alert('분류를 선택하세요')\r\n           else if(frm.qsubject.value =='') alert('제목을 작성하세요')\r\n           else if(frm.qtext.value =='') alert('내용을 작성하세요')\r\n           else{\r\n                frm.submit();\r\n           }\r\n        });\r\n    </script>\r\n{% endblock %}\r\n\r\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/templates/question/question.html b/templates/question/question.html
++--- a/templates/question/question.html	(revision f055a6ddde7d534229b7441fb38dd87453fc24a5)
+++++ b/templates/question/question.html	(date 1657086292165)
++@@ -8,26 +8,26 @@
++ {% endblock %}
++ {% block content %}
++ 
++-    <div class="card card-body bg-light">
+++    <div class="card card-body bg-light mt-5">
++     <div class="d-flex">
++-                 <form name="quefrm" method="post">
+++            <form name="quefrm" method="post">
++                 {% csrf_token %}
++-                <h2>고객문의 접수</h2>
+++                <h2><i class="bi bi-chat-square-text"></i> 고객문의 접수</h2>
++                 <div class="row mt-5">
++                     <label for="qname" class="col-form-label col-2 text-end ">이름</label>
++-                    <div class="col-5">
+++                    <div class="col-10">
++                         <input type="text" name="qname" id="qname" class="form-control" >
++                     </div>
++                 </div>
++                 <div class="row mt-3">
++                     <label for="qphone" class="col-form-label col-2 text-end ">전화번호</label>
++-                    <div class="col-5">
++-                        <input type="text" name="qphone" id="qphone" class="form-control">
+++                    <div class="col-10">
+++                        <input type="text" name="qphone" id="qphone" class="form-control" placeholder="'-' 없이 숫자만 입력">
++                     </div>
++                 </div>
++                 <div class="row mt-3">
++                     <label for="qemail" class="col-form-label col-2 text-end ">이메일</label>
++-                    <div class="col-5">
+++                    <div class="col-10">
++                         <input type="text" name="qemail" id="qemail" class="form-control">
++                     </div>
++                 </div>
++@@ -63,7 +63,7 @@
++                 </div>
++ 
++             </form>
++-        <div><img src="{% static '/imgs/q7.png' %}" style="width: 90%; margin: 20%"></div>
+++        <div><img src="{% static '/imgs/q7.png' %}" style="width: 80%; margin: 20%"></div>
++     </div>
++         <div class="text-center">
++                         <button type="button" class="btn btn-primary" id="qbtn">
++Index: question/models.py
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>from django.db import models\r\n\r\n# Create your models here.\r\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/question/models.py b/question/models.py
++--- a/question/models.py	(revision f055a6ddde7d534229b7441fb38dd87453fc24a5)
+++++ b/question/models.py	(date 1657089455906)
++@@ -1,3 +1,18 @@
+++from datetime import datetime
+++
++ from django.db import models
++ 
++ # Create your models here.
+++
+++class Question(models.Model):
+++    id = models.AutoField(primary_key=True)
+++    qname = models.CharField(max_length=16)
+++    qphone = models.CharField(max_length=16)
+++    qemail = models.CharField(max_length=40)
+++    qselect = models.CharField(max_length=20)
+++    qsubject = models.TextField()
+++    context = models.TextField()
+++    regdate = models.DateTimeField(default=datetime.now)
+++
+++    class Meta:
+++        db_table = 'qu  estion'
++Index: templates/community/faq.html
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>{% extends 'layout/base.html' %}\r\n{% load static %}\r\n{% block content %}\r\n <div class=\"text-center \">\r\n\r\n      <img src=\"/static/imgs/Faq.png\">\r\n      <img src=\"/static/imgs/Faq2.png\">\r\n      <img src=\"/static/imgs/Faq3.png\">\r\n\r\n     </div>\r\n\r\n{% endblock %}\r\n\r\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/templates/community/faq.html b/templates/community/faq.html
++--- a/templates/community/faq.html	(revision f055a6ddde7d534229b7441fb38dd87453fc24a5)
+++++ b/templates/community/faq.html	(date 1657091270494)
++@@ -1,13 +1,751 @@
++ {% extends 'layout/base.html' %}
++ {% load static %}
++ {% block content %}
++- <div class="text-center ">
+++
++ 
++-      <img src="/static/imgs/Faq.png">
++-      <img src="/static/imgs/Faq2.png">
++-      <img src="/static/imgs/Faq3.png">
+++      <section class="section">
+++			<div class="container mt-5">
+++                <div class="row my-6">
+++                    <div class="col-lg-3 mb-4">
+++					    <ul class="nav nav-pills nav-justified flex-column bg-white rounded border p-3 mb-0 sticky-bar"
+++							id="pills-tab"
+++							role="tablist">
+++                            <li class="nav-item" role="presentation">
+++                                <a class="nav-link active	p-2 px-3 rounded border"
+++									id="general-question"
+++									data-bs-toggle="pill"
+++									href="#general-que"
+++									role="tab"
+++									aria-controls="general-que"
+++									aria-selected="false">검사대행일반</a>
+++                            </li>
++ 
++-     </div>
+++                            <li class="nav-item mt-2" role="presentation">
+++                                <a class="nav-link p-2 px-3 rounded border "
+++									id="working-question"
+++									data-bs-toggle="pill"
+++									href="#work-que"
+++									role="tab"
+++									aria-controls="work-que"
+++									aria-selected="false">결제</a>
+++                            </li>
+++                              <li class="nav-item mt-2" role="presentation">
+++                                <a class="nav-link p-2 px-3 rounded border "
+++									id="member-question"
+++									data-bs-toggle="pill"
+++									href="#member-que"
+++									role="tab"
+++									aria-controls="member-que"
+++									aria-selected="false">회원</a>
+++                            </li>
+++                            <li class="nav-item mt-2" role="presentation">
+++                                <a class="nav-link p-2 px-3 rounded border "
+++									id="update-question"
+++									data-bs-toggle="pill"
+++									href="#update-que"
+++									role="tab"
+++									aria-controls="update-que"
+++									aria-selected="false">Update Questions</a>
+++                            </li>
+++                        </ul>
+++
+++                    </div>
+++                    <div class="col-lg-9">
+++						<div class="row">
+++							<div class="col-lg-12 ">
+++
+++								<div class="tab-content rounded border  p-3" id="pills-tabContent">
+++									<div class="tab-pane fade show active"
+++										id="general-que"
+++										role="tabpanel"
+++										aria-labelledby="general-question">
+++
+++										<div class="accordion" id="accordionExample">
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading1-1">
+++													<button class="accordion-button"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse1-1"
+++														aria-expanded="true"
+++														aria-controls="collapse1-1">
+++														<span class="text-primary">자동차검사대행</span> 은 어떻게 진행됩니까?
+++													</button>
+++												</h2>
+++												<div id="collapse1-1" class="accordion-collapse collapse show" aria-labelledby="heading1-1" data-bs-parent="#accordionExample">
+++													<div class="accordion-body">
+++															<p class="text-muted faq-ans"> 고객님의 자동차가 주차되어 있는 위치로 지역별 담당 매니저가 방문하여 <code class="text-danger font-weight-bold">픽업, 검사를 마친 후 차량을 인계</code> 해드립니다.</p>
+++															<code class="text-light rounded p-2 bg-secondary font-weight-bold">매년 15만대 이상의 자동차검사대행을 수행하고 있습니다</code>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading1-2">
+++													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-2" aria-expanded="false" aria-controls="collapse1-2">
+++														서비스 이용을 위해 앱설치가 필요합니까?
+++													</button>
+++												</h2>
+++												<div id="collapse1-2" class="accordion-collapse collapse" aria-labelledby="heading1-2" data-bs-parent="#accordionExample">
+++													<div class="accordion-body">
+++														<span class="text-muted faq-ans">아닙니다! 사용자 컴퓨터의 인터넷 브라우저나 스마트폰의 "인터넷", "Safari" 앱을 실행하고 <code class="text-danger font-weight-bold">https://m.motorman.co.kr</code> 을 입력하시면 됩니다. </span>
+++														<p class="text-muted faq-ans">서비스 주문페이지에 입력되는 모든 내용은 SSL로 암호화되어 전송됩니다</p>
+++														<code class="text-light rounded p-2 bg-secondary font-weight-bold"> 인터넷 주소창의 <i class="mdi mdi-lock mr-1"></i>자물쇠를 확인하세요</code>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading1-3">
+++													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-3" aria-expanded="false" aria-controls="collapse1-3">
+++														자동차검사대행을 신청하면 검사소에 별도로 예약해야합니까?
+++													</button>
+++												</h2>
+++												<div id="collapse1-3" class="accordion-collapse collapse" aria-labelledby="heading1-3" data-bs-parent="#accordionExample">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">아닙니다! 대행서비스를 예약하시면 고객님께서는 별도로 검사소에 예약하실 필요가 없습니다</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading1-4">
+++													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-4" aria-expanded="false" aria-controls="collapse1-4">
+++														<span class="text-primary">회원가입</span>이 필요합니까?
+++													</button>
+++												</h2>
+++												<div id="collapse1-4" class="accordion-collapse collapse" aria-labelledby="heading1-4" data-bs-parent="#accordionExample">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">아닙니다! 자동차검사 대행서비스는 회원가입을 하실 필요가 없이, 전화 또는 자동차검사예약 링크를 통해서 바로 이용하실 수 있습니다. </p>
+++														<p class="text-muted faq-ans">2020년 5월 4일 부터 <code class="text-danger font-weight-bold">고객님의 선택에 따라</code> 회원가입도 가능하시도록 준비가 되었습니다. Faq > "회원 탭" 을 살펴보세요</p>
+++														<code class="text-light rounded p-2 bg-secondary font-weight-bold"> 회원가입을 이용하시면 할인을 비롯한 혜택이 제공되고 있습니다</code>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading1-5">
+++													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-5" aria-expanded="false" aria-controls="collapse1-5">
+++														<span class="text-primary">자동차검사예약</span>은 어떻게 합니까?
+++													</button>
+++												</h2>
+++												<div id="collapse1-5" class="accordion-collapse collapse" aria-labelledby="heading1-5" data-bs-parent="#accordionExample">
+++													<div class="accordion-body">
+++														<span class="text-muted faq-ans">자동차검사 대행을 희망하는 날짜를 기준으로 예약을 해주시면 됩니다. 전화 1577-0266 또는 https://m.motorman.co.kr > 자동차검사 > "픽업&딜리버리 예약" 메뉴를 이용하십시오. </span>
+++														<p class="text-muted faq-ans">가까운 검사소방문 예약은 고객님 주변의 추천된 검사소에 할인을 받고 예약 후 방문하실 수 있습니다.</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading1-6">
+++													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-6" aria-expanded="false" aria-controls="collapse1-6">
+++														 한국교통안전공단 검사소에 예약을 했습니다. 대행이 가능합니까?
+++													</button>
+++												</h2>
+++												<div id="collapse1-6" class="accordion-collapse collapse" aria-labelledby="heading1-6" data-bs-parent="#accordionExample">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">네. 한국교통안전공단 검사소에 예약을 하신 고객께서는 아래의 상담톡 또는 고객센터 <a href="tel:1577-0266">1577-0266</a> 으로 문의하여 딜리버리 서비스를 이용하세요.</p>
+++													</div>
+++												</div>
+++											</div>
+++										</div>
+++
+++									</div>
+++
+++									<div class="tab-pane fade" id="work-que" role="tabpanel" aria-labelledby="working-question">
+++										<div class="accordion" id="accordionExample2">
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading2-1">
+++													<button class="accordion-button"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse2-1"
+++														aria-expanded="true"
+++														aria-controls="collapse2-1">
+++														<span class="text-primary">결제</span> 는 어떻게 하나요?
+++													</button>
+++												</h2>
+++												<div id="collapse2-1" class="accordion-collapse collapse show" aria-labelledby="heading2-1" data-bs-parent="#accordionExample2">
+++													<div class="accordion-body">
+++														<span class="text-muted faq-ans"><code class="text-danger font-weight-bold">온라인 예약시 결제</code> 할 수 있습니다.</span>
+++														<p class="text-muted faq-ans">결제방법은 온라인신용카드결제<span class="badge bg-success ml-1">할인</span>, 실시간계좌이체<span class="badge bg-success ml-1">할인</span>, 네이버페이 카카오페이와 같은 간편결제<span class="badge bg-success ml-1">할인</span>, 고객센터를 통한 신용카드 결제가 가능하며 모든 결제액은 부가세가 포함되어 있습니다.</p>
+++														<p class="text-muted faq-ans"><code class="text-light rounded p-2 bg-secondary font-weight-bold"> 온라인 신용카드 결제 또는 고객센터 1577-0266 에서 전화신용카드결제가 가능합니다</code></p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading2-2">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse2-2"
+++														aria-expanded="false"
+++														aria-controls="collapse2-2">
+++														<h6 class="title mb-0"> 사용 가능한 카드 종류는 어떻게 되나요?  </h6>
+++													</button>
+++												</h2>
+++												<div id="collapse2-2" class="accordion-collapse collapse" aria-labelledby="heading2-2" data-bs-parent="#accordionExample2">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">비씨, 국민, 삼성, 신한, 현대, 롯데, 농협, 하나 등 국내결제가 가능한 모든 신용카드를 사용해서 결제하실 수 있습니다.</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading2-3">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse2-3"
+++														aria-expanded="false"
+++														aria-controls="collapse2-3">
+++														할인을 받으려면 어떻게 하나요?
+++													</button>
+++												</h2>
+++												<div id="collapse2-3" class="accordion-collapse collapse" aria-labelledby="heading2-3" data-bs-parent="#accordionExample2">
+++													<div class="accordion-body">
+++														<span class="text-muted faq-ans">2021년 09월 30일 현재 제공되는 할인 혜택은 다음과 같습니다.</span>
+++														<p class="text-muted faq-ans">
+++														<span class="text-muted faq-ans"><code class="text-danger font-weight-bold">회원가입(네이버 로그인) 후 로그인 1,000원</code></span>
+++														<p class="text-muted faq-ans"><code class="text-danger font-weight-bold">재구매(로그인필요) 할인 1,000원</code></p>
+++														<p>결제방법에 따라 아래와 같이 각각 할인이 적용됩니다.</p>
+++														<p class="text-muted faq-ans">1. <code class="text-danger font-weight-bold">온라인신용카드결제 1,000원</code></p>
+++														<p class="text-muted faq-ans">2. <code class="text-danger font-weight-bold">실시간계좌이체 1,000원</code></p>
+++														<p class="text-muted faq-ans">3. <code class="text-danger font-weight-bold">간편결제 1,000원</code></p>
+++
+++														<p class="text-muted faq-ans">할인은 중복적용이 허용되며, 최대 3,000원까지 할인이 가능합니다.</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading2-4">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse2-4"
+++														aria-expanded="false"
+++														aria-controls="collapse2-4">
+++														세금계산서를 발행하고 싶습니다
+++													</button>
+++												</h2>
+++												<div id="collapse2-4" class="accordion-collapse collapse" aria-labelledby="heading2-4" data-bs-parent="#accordionExample2">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans"> 세금계산서가 필요하신 경우에는 고객센터(전화, 채팅)를 통해 요청을 해주시고, 신용카드에 대한 결제 영수증은 문자메세지 또는 메일로 발송해드립니다.<br />법인카드로 결제시에는 신용카드전표를 사용하시고, 별도의 세금계산서를 발행해드리지는 않습니다.<br />
+++															무통장입금으로 결제하시는 경우에는 목적에 따라 소득공제 또는 지출증빙용 영수증을 문자메세지 또는 메일로 발송해드립니다.
+++															</p>
+++													</div>
+++												</div>
+++											</div>
+++										</div>
+++									</div>
+++
+++
+++									<div class="tab-pane fade" id="member-que" role="tabpanel" aria-labelledby="member-question">
+++										<div class="accordion" id="accordionExample3">
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading3-1">
+++													<button class="accordion-button"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse3-1"
+++														aria-expanded="true"
+++														aria-controls="collapse3-1">
+++                                                        <span class="text-primary">회원가입이 왜 필요한가요?</span>
+++													</button>
+++												</h2>
+++												<div id="collapse3-1" class="accordion-collapse collapse show" aria-labelledby="heading3-1" data-bs-parent="#accordionExample3">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">
+++														"불필요한 정보는 제공받을 필요가 없다" 로 회원가입 없는 온라인서비스를 시작하였습니다.</p>
+++														<p class="text-muted faq-ans">약 2년이 지나 아래의 몇 가지 사유로 "회원가입"을 준비하기 시작하였고, 2020년 5월 4일" 어린이 날" 전일에 네이버로 부터 "네이버 아이디로 로그인" 의 적정성 검수 승인을 받아 회원가입을 Open 했습니다.</p>
+++														<p class="text-muted faq-ans">
+++														 - 신규 고객을 유치하기 위한 혜택도 좋지만 vs 기존 고객을 절대 소홀히 하지말자! (기존 고객을 어떻게 판단하지?)<br />
+++														 - 서비스를 재 구매할 때 같은 내용을 매번 키입력해야 하는 번거로움을 어떻게 해결하지? (스마트폰 오타 작렬 ~~~)<br />
+++														 - 고객과의 커뮤니케이션을 더더더더더~ 세련되게 할 방법이 없을까?<br />
+++														 - 그러면서도, 정보수집을 어떻게 하면 최소화 할 수 있을까?<br />
+++														 </p>
+++														<p class="text-muted faq-ans">
+++															이런 고민에서 전과 같이 회원가입을 하지 않아도 서비스는 이용가능하면서도, 철저히 고객의 선택에 의한 현재와 같은 초기 버전의 회원도구가 마련되었습니다. (기본이 갖추어졌으니 더 많은 편의성과 혜택을 연구할 차례입니다.)
+++														 </p>
+++													</div>
+++												</div>
+++											</div>
+++
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading3-2">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse3-2"
+++														aria-expanded="false"
+++														aria-controls="collapse3-2">
+++														회원가입은 어떻게 하나요?
+++													</button>
+++												</h2>
+++												<div id="collapse3-2" class="accordion-collapse collapse" aria-labelledby="heading3-2" data-bs-parent="#accordionExample3">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">회원가입은 네이버 계정을 이용한 간편 로그인으로만 운영되고 있습니다.</p>
+++														<p class="text-muted faq-ans">
+++															"네이버 아이디로 회원가입/로그인" 시 <br />
+++															 - 필수값으로 "이름", "이메일" 을, 선택 값으로 "프로필 사진" 을 네이버로부터 제공받아 회원정보로 사용을 합니다.<br />
+++															 - 상기의 정보 외 회원의 각종 서비스 이용시 발송되는 메세지를 수신할 수 있는 휴대전화번호를 필수로 제공받습니다. <br />
+++															 - 나머지 정보는 고객님의 편의를 위해서 100% 고객님의 선택에 따라 입력해주셔도 되고 안해주셔도 됩니다.
+++														</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading3-3">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse3-3"
+++														aria-expanded="false"
+++														aria-controls="collapse3-3">
+++														로그인 아이디와 암호를 잊어버렸습니다.
+++													</button>
+++												</h2>
+++												<div id="collapse3-3" class="accordion-collapse collapse" aria-labelledby="heading3-3" data-bs-parent="#accordionExample3">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">
+++														네이버 간편 로그인을 이용하므로, 저희는 고객님의 로그인 아이디와 암호를 따로 저장하지 않습니다.<br />
+++														네이버의 로그인 아이디와 암호를 분실하신 경우에는 네이버의 정책에 따라 로그인 정보를 찾아야 합니다.
+++														</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading3-4">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse3-4"
+++														aria-expanded="false"
+++														aria-controls="collapse3-4">
+++														이름과 이메일을 변경하고 싶어요!
+++													</button>
+++												</h2>
+++												<div id="collapse3-4" class="accordion-collapse collapse" aria-labelledby="heading3-4" data-bs-parent="#accordionExample3">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">
+++														"이름" 과 "이메일" 은 네이버에서 변경하시면, 자동으로 반영됩니다.
+++														</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading3-5">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse3-5"
+++														aria-expanded="false"
+++														aria-controls="collapse3-5">
+++														로그인 후 추가로 입력해야 하는 정보는 왜 필요한가요?
+++													</button>
+++												</h2>
+++												<div id="collapse3-5" class="accordion-collapse collapse" aria-labelledby="heading3-5" data-bs-parent="#accordionExample3">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">
+++														<p class="text-muted faq-ans">
+++															서비스 주문시 편의를 위해 가장 빈번히 사용되는 "주소", "자동차번호" 와 같은 정보를
+++															미리 저장해두시면, 새로운 서비스를 주문할 때 매 번 입력하지 않고, 간단하게 선택하여 이용하실 수 있도록 하기 위함입니다.<br />
+++															회원가입 이후 추가로 입력하는 정보들은 모두 고객님의 선택에 의해 제공받습니다.
+++															</p>
+++														</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading3-6">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse3-6"
+++														aria-expanded="false"
+++														aria-controls="collapse3-6">
+++														회원으로 가입하면 혜택은요?
+++													</button>
+++												</h2>
+++												<div id="collapse3-6" class="accordion-collapse collapse" aria-labelledby="heading3-6" data-bs-parent="#accordionExample3">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">
+++															고객님 소소하지만 따뜻한 마음을 담아 몇 가지 혜택을 준비해두었습니다.<br />
+++															1. 회원으로 가입만 해도 1,000원 할인<br />
+++															2. 구매이력이 있다면 추가로 1,000원 할인 <br />
+++															3. 온라인 접수로 선불결제를 하면 또 1,000원 할인<br />
+++															4. 더 매력적인 혜택은 계속 연구 중이긴 한데,.... 연구를 하면 할 수록 .... -_-;
+++														</p>
+++													</div>
+++												</div>
+++											</div>
+++										</div>
+++									</div>
+++
+++
+++									<div class="tab-pane fade" id="update-que" role="tabpanel" aria-labelledby="update-question">
+++										<div class="accordion" id="accordionExample4">
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-1">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-1"
+++														aria-expanded="false"
+++														aria-controls="collapse4-1">
+++														자동차검사대행예약을 <span class="text-primary">변경</span> 하고 싶습니다.
+++													</button>
+++												</h2>
+++												<div id="collapse4-1" class="accordion-collapse collapse show" aria-labelledby="heading4-1" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">
+++															자동차검사대행예약 일정은 변경하실 수 있습니다.<br />
+++															픽업 주소지를 변경하고자 하시면 예약을 취소 후 접수해 주세요. 다만, 다른 고객분들을 위해 예정된 검사일시를 기준으로 최소 2시간 전까지는 변경 신청을 완료해주시기를 부탁드립니다.</p>
+++														<code class="text-light rounded p-2 bg-secondary font-weight-bold">예약변경은 전화 1577-0266 또는 서비스 변경/취소 메뉴에서 하실 수 있습니다.</code>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-2">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-2"
+++														aria-expanded="false"
+++														aria-controls="collapse4-2">
+++														자동차검사예약을 취소하고 싶습니다.
+++													</button>
+++												</h2>
+++												<div id="collapse4-2" class="accordion-collapse collapse" aria-labelledby="heading4-2" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">네! 예약된 자동차검사를 취소하고자 할 때는 위약금 없이 취소하실 수 있습니다. 다만, 다른 고객분들을 위해 예정된 검사일시를 기준으로 최소 2시간 전까지는 예약을 취소해주시기를 부탁드립니다.</p>
+++														<code class="text-light rounded p-2 bg-secondary font-weight-bold">예약취소는 전화 1577-0266 또는 서비스 변경/취소 메뉴에서 하실 수 있습니다.</code>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-3">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-3"
+++														aria-expanded="false"
+++														aria-controls="collapse4-3">
+++														자동차검사비용은 얼마입니까?
+++													</button>
+++												</h2>
+++												<div id="collapse4-3" class="accordion-collapse collapse" aria-labelledby="heading4-3" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">자동차검사비용은 한국교통안전공단 기준의 검사료와 대행서비스를 위한 직원의 왕복대행료로 구성이 됩니다. <br />
+++														자세한 자동차검사비용이 궁금하시면 전화 1577-0266으로 문의를 주시면 안내해 드립니다.</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-4">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-4"
+++														aria-expanded="false"
+++														aria-controls="collapse4-4">
+++														결제를 완료했습니다. 해당 결제내역의  <span class="text-primary">증빙용 영수증</span> 을 발급하고 싶은데 어떻게 하나요?
+++													</button>
+++												</h2>
+++												<div id="collapse4-4" class="accordion-collapse collapse" aria-labelledby="heading4-4" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<span class="text-muted faq-ans">
+++															온라인신용카드, 간편결제, 실시간계좌이체(지출증빙용도)로 결제시 결제 영수증을 문자메세지 또는 메일로 발송해드리며 별도의 세금계산서를 발행해드리지는 않습니다.
+++														</span>
+++														<p class="text-muted faq-ans">
+++															현금으로 입금하시는 경우에는 목적에 따라 소득공제 또는 지출증빙용 영수증을 문자메세지 또는 메일로 발송해드립니다.
+++														</p>
+++														<h5 class="h6 mt-4"><i class="mdi mdi-chevron-right"></i> 신용카드 매출전표 및 세금계산서 중복 : </h5>
+++														<div class="mt-4 p-4 bg-light rounded shadow">
+++														<p class="mb-0 text-muted">신용카드매출전표를 통해 적격증빙을 발급한 셈이 되므로, 세금계산서를 중복해서 발급할 수 없도록 하고 있습니다. 신용카드 매출전표와 중복된 세금계산서로 동시에 신고를 할 경우 가산세가 부가됩니다.</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-5">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-5"
+++														aria-expanded="false"
+++														aria-controls="collapse4-5">
+++														쿠폰을 받았습니다. 어디에서 등록하면 되나요?
+++													</button>
+++												</h2>
+++												<div id="collapse4-5" class="accordion-collapse collapse" aria-labelledby="heading4-5" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">쿠폰을 이용하시려면 온라인 자동차검사 신청메뉴를 이용하실 경우에 한해 적용하실 수 있습니다.
+++														자동차검사 예약 메뉴에서 발급받으신 쿠폰번호를 입력하시면 할인된 금액으로 자동차검사를 이용하실 수 있습니다.</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-6">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-6"
+++														aria-expanded="false"
+++														aria-controls="collapse4-6">
+++														배정된 대행원이 아닌 다른 사람이 왔습니다. 어떻게 하나요?
+++													</button>
+++												</h2>
+++												<div id="collapse4-6" class="accordion-collapse collapse" aria-labelledby="heading4-6" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">
+++														고객님의 자동차검사를 대행할 대행원은 서비스 예약시에 결정됩니다.
+++														대행원 변경이 필요한 경우에는 고객님의 휴대전화로 변경되었음이 고지되며, 대행원이 변경되었으나 휴대전화나 기타의 방법으로 사전 안내가 되지 못한 경우에는 고객센터 1577-0266으로 대행원 확인을 하실 수 있습니다.
+++														변경된 대행원이 확인이 되는 경우에는 대행을 맡기시더라도 문제가 없습니다</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-7">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-7"
+++														aria-expanded="false"
+++														aria-controls="collapse4-7">
+++														대행원이 대기요금을 요청하는 경우에는 어떻게 합니까?
+++													</button>
+++												</h2>
+++												<div id="collapse4-7" class="accordion-collapse collapse" aria-labelledby="heading4-7" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">현재 자동차검사대행서비스는 대기요금을 청구하지 않습니다. 안내되는 검사료와 대행료 외 추가비용이 발생하는 경우에는 사전에 고객님에 안내를 드립니다.</p>
+++															<code class="text-light rounded p-2 bg-secondary font-weight-bold">고객센터 1577-0266 로 문의해주세요.</code>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-8">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-8"
+++														aria-expanded="false"
+++														aria-controls="collapse4-8">
+++														제 차량상태(차량고장, 출차불가 등) 때문에 운행이 불가한 상황입니다. 어떻게 하면 되나요?
+++													</button>
+++												</h2>
+++												<div id="collapse4-8" class="accordion-collapse collapse" aria-labelledby="heading4-8" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">고객님의 차량상태로 인해 운행 불가능한 상황이므로 방문한 대행원께 양해를 구하고 서비스 취소를 합의하신 후 대행원이 취소처리를 할 수 있도록 요청해 주시면 됩니다.</p>
+++														<code class="text-light rounded p-2 bg-secondary font-weight-bold">혹여 대행원과 분쟁이 발생되면 전화 1577-0266으로 전화해 주시기 바랍니다.</code>
+++													</div>
+++												</div>
+++											</div>
+++
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-9">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-9"
+++														aria-expanded="false"
+++														aria-controls="collapse4-9">
+++														자동차검사예약 때 안내된 금액과 결제가 요청된 금액이 다릅니다. 어떻게 해야 하나요?
+++													</button>
+++												</h2>
+++												<div id="collapse4-9" class="accordion-collapse collapse" aria-labelledby="heading4-9" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">일반적인 경우에는 자동차검사예약때 안내드린 금액을 청구하는 것이 맞습니다. 단, 검사진행중 부적합이 예상되는 항목에 대해서는 고객님께 안내를 드린 후 <code class="text-danger font-weight-bold">승인을 하시는 경우</code>에 한하여 소정의 조치비용을 추가로 청구할 수 있습니다. 부적합사항 조치를 위한 추가비용 청구를 거부하시는 경우에는 검사결과 부적합 판정이 되면 부적합인 상태로 고객님께 자동차를 인계해드리게 됩니다.</p>
+++														<code class="text-light rounded p-2 bg-secondary font-weight-bold">고객님과 약속또는 협의된 비용 외 추가비용을 청구하지 않습니다</code>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-10">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-10"
+++														aria-expanded="false"
+++														aria-controls="collapse4-10">
+++														대행원에게 팁을 주고 싶습니다
+++													</button>
+++												</h2>
+++												<div id="collapse4-10" class="accordion-collapse collapse" aria-labelledby="heading4-10" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">회사는 고객으로 부터 일체의 팁을 받지 않습니다. 꼭 팁을 주고 싶으실 정도로 서비스에 만족하신다면 담당 대행매니저에게 직접 전달하십시오.</p>
+++														<code class="text-light rounded p-2 bg-secondary font-weight-bold">회사는 고객님께서 불편해 하지 않으시도록 서비스를 제공해야할 의무를 수행할 뿐입니다.</code>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-10">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-10"
+++														aria-expanded="false"
+++														aria-controls="collapse4-10">
+++														배정된 대행원과 분쟁이 생겼을 경우에는 어떻게 하나요?
+++													</button>
+++												</h2>
+++												<div id="collapse4-10" class="accordion-collapse collapse" aria-labelledby="heading4-10" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++													<p class="text-muted faq-ans">고객센터 전화 1577-0266 으로 연락해 주십시오.</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-11">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-11"
+++														aria-expanded="false"
+++														aria-controls="collapse4-11">
+++														대행원이 차키 또는 차량을 가지고 가신 것 같습니다.
+++													</button>
+++												</h2>
+++												<div id="collapse4-11" class="accordion-collapse collapse" aria-labelledby="heading4-11" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">발송된 카카오알림톡 또는 문자메세지에 표기된 담당 대행원의 연락처로 전화를 하실 수 있습니다.
+++														담당 대행원과 연락이 되지 않는 경우에는 고객센터 1577-0266 으로 연락해 주십시오.</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-12">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-12"
+++														aria-expanded="false"
+++														aria-controls="collapse4-12">
+++														서비스 이용 후 차량 내에 있던 물건이 없어진 것 같습니다.
+++													</button>
+++												</h2>
+++												<div id="collapse4-12" class="accordion-collapse collapse" aria-labelledby="heading4-12" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">자동차검사를 위해 대행원이 자동차를 운행하기 전에 현금, 귀중품은 별도로 보관해 주십시오. 분쟁이 해결되지 않는 경우에는 고객센터 1577-0266으로 연락해주십시오.</p>
+++														<code class="text-light rounded p-2 bg-secondary font-weight-bold">회사설립 후 2020년 현재까지 차량 내 금품에 대한 도난 분쟁이 없었습니다.</code>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-13">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-13"
+++														aria-expanded="false"
+++														aria-controls="collapse4-13">
+++														자동차검사대행이 진행되던 중 과태료가 발생했습니다.
+++													</button>
+++												</h2>
+++												<div id="collapse4-13" class="accordion-collapse collapse" aria-labelledby="heading4-13" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">고객센터 1577-0266으로 문의하시거나, 당사 고객지원 문의하기를 통해 문의하십시오.
+++														문의를 해주실 때 다음의 내용을 함께 제공해 주시면 조금 떠 빠른 시간내에 처리가 될 수 있습니다.	<br />
+++														<span class="text-danger">1. 과태료가 발생한 자동차등록번호</span><br />
+++														<span class="text-danger">	2. 과태료 고지서 사진, 입금받으실 통장사본 또는 계좌번호/은행명/예금주</span></p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-14">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-14"
+++														aria-expanded="false"
+++														aria-controls="collapse4-14">
+++														자동차검사대행 업무 중 사고가 발생했습니다. 어떻게 하나요?
+++													</button>
+++												</h2>
+++												<div id="collapse4-14" class="accordion-collapse collapse" aria-labelledby="heading4-14" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">통상적으로 담당 대행원께서 사고접수를 진행하실 겁니다.
+++														만일 대행원이 직접 사고접수를 하기 어려우신 상황이라면, 고객님께서 직접 고객센터 1577-0266으로 접수하실 수 있습니다.</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-15">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-15"
+++														aria-expanded="false"
+++														aria-controls="collapse4-15">
+++														자동차검사 서비스를 이용하고 다음날 차량 손상을 발견했습니다.
+++													</button>
+++												</h2>
+++												<div id="collapse4-15" class="accordion-collapse collapse" aria-labelledby="heading4-15" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">자동차검사대행 업무 시 차량상태 확인서를 작성하거나 이와 유사한 방법으로 고객님의 확인 절차를 거칩니다.
+++														이를 통해 면책할 수 있습니다. 단, 위의 절차가 진행되지 않은 경우라면 고객센터 1577-0266 으로 연락해 주십시오.</p>
+++													</div>
+++												</div>
+++											</div>
+++
+++											<div class="accordion-item">
+++												<h2 class="accordion-header" id="heading4-16">
+++													<button class="accordion-button collapsed"
+++														type="button"
+++														data-bs-toggle="collapse"
+++														data-bs-target="#collapse4-16"
+++														aria-expanded="false"
+++														aria-controls="collapse4-16">
+++														자동차검사 서비스 이용 중 사고에 대한 보험보장범위는 어떻게 되나요?
+++													</button>
+++												</h2>
+++												<div id="collapse4-16" class="accordion-collapse collapse" aria-labelledby="heading4-16" data-bs-parent="#accordionExample4">
+++													<div class="accordion-body">
+++														<p class="text-muted faq-ans">대행서비스 제공 중 발생하는 대인, 대물, 자차 사고에 대해 아래의 범위에서 보상해드립니다. 	대인배상I(책임보험)은 자동차 보유자의 자동차보험에서 보상됩니다.</p>
+++														<h5 class="h6 mt-4"><i class="mdi mdi-chevron-right"></i> 사고보장범위 : </h5>
+++														<div class="mt-4 p-4 bg-light rounded shadow">
+++															<p class="mb-0 text-muted">
+++															대인II : 무한<br />
+++															대물 : 1억원<br />
+++															자차 : 3천만원
+++															</p>
+++														</div>
+++													</div>
+++												</div>
+++											</div>
+++										</div>
+++									</div>
+++								</div>
+++							</div>
+++						</div>
+++					</div>
+++                </div>
+++            </div>
+++        </div>
+++      </section>
++ 
++ {% endblock %}
++ 
++Index: question/views.py
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>from django.shortcuts import render\r\n\r\n# Create your views here.\r\nfrom django.views import View\r\n\r\n\r\nclass QuestionView(View):\r\n    def get(self, request):\r\n        return render(request, 'question/question.html')\r\n\r\n    def post(self, request):\r\n        return render(request, 'question/questionok.html')\r\n\r\nclass QuestionokView(View):\r\n    def get(self, request):\r\n        return render(request, 'question/questionok.html')
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/question/views.py b/question/views.py
++--- a/question/views.py	(revision f055a6ddde7d534229b7441fb38dd87453fc24a5)
+++++ b/question/views.py	(date 1657089348970)
++@@ -1,16 +1,32 @@
++-from django.shortcuts import render
+++from django.shortcuts import render, redirect
++ 
++ # Create your views here.
++ from django.views import View
++ 
+++from question.models import Question
+++
++ 
++ class QuestionView(View):
++     def get(self, request):
++         return render(request, 'question/question.html')
++ 
++     def post(self, request):
++-        return render(request, 'question/questionok.html')
+++        form = request.POST.dict()
+++
+++        q = Question(qname=form['qname'], qphone=form['qphone'],
+++                     qemail=form['qemail'], qselect=form['qselect'],
+++                     qsubject=form['qsubject'], context=form['qtext'])
+++        q.save()
+++
+++        return redirect('/question/questionok?qname=' + form['qname'])
++ 
++ class QuestionokView(View):
++     def get(self, request):
++-        return render(request, 'question/questionok.html')
++\ No newline at end of file
+++        form = request.GET.dict()
+++
+++        q = Question.objects.select_related().get(qname=form['qname'])
+++
+++        context = {'q': q}
+++        return render(request, 'question/questionok.html', context)
+++
+++
++Index: templates/question/questionok.html
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>{% extends 'layout/base.html' %}\r\n{% load static %}\r\n{% block content %}\r\n        <div id=\"main\">\r\n        <div class=\"text-center \">\r\n            <div>\r\n                <i class=\"bi bi-check-circle-fill text-success \" style=\"font-size: 10rem\"></i>\r\n                <div class=\"display-2 text-black-50 mt-2\">\r\n                    <span class=\"text-black fw-bold\">고객 문의</span> 접수가 완료되었습니다.\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"display-4 text-black-50 mt-5 mb-5\">\r\n                <div class=\"m-3\">이름 : ??? </div>\r\n                <div class=\"m-3\">전화번호 : ???</div>\r\n                <div class=\"m-3\">이메일 : ???@?????.???</div>\r\n                <div class=\"m-3\">문의분류 : ??????</div>\r\n            </div>\r\n\r\n            <div class=\"mb-5\">\r\n                <a href=\"{% url 'index' %}\"><button type=\"button\" class=\"btn btn-primary\" style=\"width: 20%; height: 20%\">메인으로</button></a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n{% endblock %}\r\n\r\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/templates/question/questionok.html b/templates/question/questionok.html
++--- a/templates/question/questionok.html	(revision f055a6ddde7d534229b7441fb38dd87453fc24a5)
+++++ b/templates/question/questionok.html	(date 1657088989508)
++@@ -11,10 +11,12 @@
++             </div>
++ 
++             <div class="display-4 text-black-50 mt-5 mb-5">
++-                <div class="m-3">이름 : ??? </div>
++-                <div class="m-3">전화번호 : ???</div>
++-                <div class="m-3">이메일 : ???@?????.???</div>
++-                <div class="m-3">문의분류 : ??????</div>
+++                <div class="m-5">접수 된 정보를 확인해주세요. </div>
+++                <div class="m-3">이름 : {{ q.qname }} </div>
+++                <div class="m-3">전화번호 : {{ q.qphone }}</div>
+++                <div class="m-3">이메일 : {{ q.qemail }}</div>
+++                <div class="m-3">문의분류 : {{ q.qselect }}</div>
+++                <div class="m-3">문의한 날짜 : {{ q.regdate }}</div>
++             </div>
++ 
++             <div class="mb-5">
++Index: .idea/runConfigurations/__.xml
++===================================================================
++diff --git a/.idea/runConfigurations/__.xml b/.idea/runConfigurations/__.xml
++deleted file mode 100644
++--- a/.idea/runConfigurations/__.xml	(revision f055a6ddde7d534229b7441fb38dd87453fc24a5)
+++++ /dev/null	(revision f055a6ddde7d534229b7441fb38dd87453fc24a5)
++@@ -1,26 +0,0 @@
++-<component name="ProjectRunConfigurationManager">
++-  <configuration default="false" name="이름이 지정되지 않았습니다" type="Python.DjangoServer" factoryName="Django server" singleton="false" nameIsGenerated="true">
++-    <module name="VIAP_Project" />
++-    <option name="INTERPRETER_OPTIONS" value="" />
++-    <option name="PARENT_ENVS" value="true" />
++-    <envs>
++-      <env name="PYTHONUNBUFFERED" value="1" />
++-      <env name="DJANGO_SETTINGS_MODULE" value="VIAP_Project.settings" />
++-    </envs>
++-    <option name="SDK_HOME" value="C:\Users\bigdata.DESKTOP-RIJG1CD\py38\Scripts\python.exe" />
++-    <option name="WORKING_DIRECTORY" value="" />
++-    <option name="IS_MODULE_SDK" value="false" />
++-    <option name="ADD_CONTENT_ROOTS" value="true" />
++-    <option name="ADD_SOURCE_ROOTS" value="true" />
++-    <option name="launchJavascriptDebuger" value="false" />
++-    <option name="port" value="8000" />
++-    <option name="host" value="" />
++-    <option name="additionalOptions" value="" />
++-    <option name="browserUrl" value="" />
++-    <option name="runTestServer" value="false" />
++-    <option name="runNoReload" value="false" />
++-    <option name="useCustomRunCommand" value="false" />
++-    <option name="customRunCommand" value="" />
++-    <method v="2" />
++-  </configuration>
++-</component>
++\ No newline at end of file
++Index: join/views.py
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>import json\r\n\r\nfrom django.http import HttpResponse\r\nfrom django.shortcuts import render, redirect\r\nimport request\r\n# Create your views here.\r\nfrom django.views import View\r\nfrom django.core import serializers\r\n\r\nfrom join.models import Zipcode, Member\r\n\r\n\r\nclass CheckmeView(View):\r\n    def get(self, request):\r\n        return render(request, 'join/checkme.html')\r\n\r\n    def post(self, request):\r\n        # captcha 사용시 클라이언트가 생성한 키와\r\n        # 서버에 설정해 둔 (비밀)키등을\r\n        # google의 siteverify에서 비교해서 인증에 성공하면\r\n        # joinme로 redirect하고, 그렇치 않으면 다시 checkme로 return함\r\n        SECRET_KEY ='6LdP86YgAAAAAFGOr9pFRvR5Nezc6mSUSwwRShor'\r\n        VERIFY_URL ='https://www.google.com/recaptcha/api/siteverify'\r\n\r\n        form = request.POST.dict()\r\n        # 질의를 위한 질의문자열을 작성\r\n        # ?secret =비밀키&response =클라이언트 응답키\r\n        params ={'secret': SECRET_KEY, 'response': form['g-recaptcha']}\r\n\r\n        #구글 recaptcha 인증사이트에 키들을 질의문자열로 보내어\r\n        #올바른 키인지 확인하고 결과를 json으로 받아옴\r\n        #requests.get(URL,질의문자열)\r\n        result = request.get(VERIFY_URL, params=params).json()\r\n\r\n        #결과중 success가 true면 joinme로 redirect\r\n        if result['success']:\r\n            # 인증성공시 이름과 전화번호를 쿠키에 저장해 둠\r\n            tokens ={'name':form['name'],'phone':form['phone']}\r\n            #한글저장이 가능한 JSON객체 문자열로 변환\r\n            tokens = json.dumps(tokens,ensure_ascii=True)\r\n            # {\"name\": \"\\uc774\\uc2b9\\uad6c\", \"phone\": \"123213\"} (이승구) 유니코드\r\n            # print(tokens)\r\n\r\n            #쿠키 설정없이 페이지만 전환\r\n            # return redirect('/join/joinme')\r\n\r\n            #쿠기 설정\r\n            res = redirect('/join/joinme')\r\n            # dict 객체를 쿠키에 저장해 둠 (현재 유지시간(max_age) 10분)\r\n            # 응답 객체.set_cookie(키, 값, 유지시간)\r\n            res.set_cookie('tokens',tokens,max_age=60*10)\r\n            return res\r\n\r\n\r\n        else:\r\n            error = '자동가입 방지 인증이 실패했습니다. 다시시도하세요'\r\n        context={'form':form,'error':error}\r\n        return render(request, 'join/checkme.html',context)\r\n\r\n\r\nclass JoinmeView(View):\r\n    def get(self, request):\r\n        #쿠키에 저장된 객체를 불러올려면 request.COOKIES.get(이름)\r\n        cookie = request.COOKIES.get('tokens')\r\n        # print(cookie)\r\n\r\n\r\n        # eval :문자열을 dict객체로 변환하는 함수\r\n        try:\r\n            return render(request, 'join/joinme.html', eval(cookie))\r\n        except:\r\n            return redirect('/join/agree')\r\n\r\n    def post(self, request):\r\n        form = request.POST.dict()\r\n        print(form)\r\n\r\n        email = form['email1'] + '@' + form['email2']\r\n        mailing = True if form['mailing'] == 'yes' else False\r\n\r\n        # 우편번호의 일련 번호를 알아내기 위해\r\n        # zipcode에 필요한 정보를 넘겨서 조회함\r\n        # 단, 현남면, 경기 화정동으로 검색시\r\n        # 하나의 결과가 아닌 복수 결과가 넘어옴\r\n        # 새로운 setZipcode 함수 덕택으로 이코드는 사용 x\r\n\r\n        # zipcode = form['zip1']+'-'+form['zip2']\r\n        # addrs = form['addr1'].split(' ')\r\n        # print(addrs)\r\n        # zip = Zipcode.objects.get(ZIPCODE=zipcode, SIDO=addrs[0], GUGUN=addrs[1], DONG=addrs[2])\r\n        # print(zip.seq)\r\n\r\n\r\n        # m = Member(userid=form['userid'],\r\n        #            passwd=form['passwd'],\r\n        #            name=form['name'],\r\n        #            phone=form['phone'],\r\n        #            zip=Zipcode.objects.get(seq=zip.seq),\r\n        #            addr=form['addr2'],\r\n        #            email=email,\r\n        #            mailing=mailing)\r\n        # m.save()\r\n\r\n        m = Member(userid=form['userid'],\r\n                   passwd=form['passwd'],\r\n                   name=form['name'],\r\n                   phone=form['phone'],\r\n                   # zip=Zipcode.objects.get(seq=zip.seq),\r\n                   zip=Zipcode.objects.get(seq=form['seq']),\r\n                   addr=form['addr2'],\r\n                   email=email,\r\n                   mailing=mailing)\r\n        m.save()\r\n\r\n        return redirect('/join/joinok?userid='+form['userid'])\r\n\r\n\r\nclass JoinokView(View):\r\n    def get(self, request):\r\n        # join/joinok?userid=***\r\n        form = request.GET.dict()\r\n\r\n        # select * from member join zipcode on m.zipcode =z.seq\r\n        # where m.userid = ****\r\n        m= Member.objects.select_related().get(userid=form['userid'])\r\n        context ={'member':m}\r\n        return render(request, 'join/joinok.html',context)\r\n\r\n    def post(self, request):\r\n\r\n        pass\r\n\r\n\r\nclass AgreeView(View):\r\n    def get(self, request):\r\n        return render(request, 'join/agree.html')\r\n\r\n    def post(self, request):\r\n        pass\r\n\r\n\r\n\r\nclass ZipcodeView(View):\r\n    def get(self, request):\r\n        form =request.GET.dict()\r\n\r\n        #select * from zipcode where dong = '동이름'\r\n        #테이블 모델명.objects.get(조건): 1개의 결과값만 처리\r\n        #테이블모델명.objects.filter(조건) : 1개이상의 결과값 처리\r\n\r\n        #result = Zipcode.objects.get(DONG='사당동')\r\n        # print(result.values())  #속성명으로 값 출력\r\n\r\n        #result = Zipcode.objects.filter(DONG='사당동')\r\n        #print(result.values())   #속성명으로 값 출력\r\n        #\r\n        result = Zipcode.objects.filter(DONG=form['dong'])\r\n\r\n        #조회 결과를 JOSON 객체로 생성\r\n        json_data =serializers.serialize('json',result)\r\n        # print(json_data,form['dong'])\r\n\r\n\r\n        # 생성된 JSON객체를 HTTP 응답객체로 전송\r\n        return HttpResponse(json_data, content_type='application/json')\r\n        # return render(request, 'join/agree.html')\r\n\r\n    def post(self, request):\r\n        pass\r\n\r\n\r\nclass UseridView(View):\r\n    def get(self, request):\r\n        #/join/userid?userid=***\r\n        #응답 메세지 =>{'result':0또는 1}\r\n        form = request.GET.dict()\r\n\r\n\r\n        #select*from member where userid = ?\r\n        count = Member.objects.filter(userid=form['userid']).count()\r\n        # print(count)\r\n\r\n        # 조회된 카운트를 json형식의 데이터로 생성\r\n        # json_data ={}\r\n        # json_data['count']=count\r\n        json_data ={'count':count}\r\n        #print(json_data)\r\n\r\n\r\n\r\n\r\n        # 생성된 json데이터를 직렬화함 - 지원안됨(직렬화시 정보부족)\r\n        #json_data = serializers.serialize('json', json_data)\r\n\r\n       #카운트는 json.dumps함수로 간단하게 문자열로 직렬화\r\n        return HttpResponse(json.dumps(json_data), content_type='application/json')\r\n\r\n\r\n        # return render(request, 'join/agree.html')\r\n\r\n    def post(self, request):\r\n        pass
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/join/views.py b/join/views.py
++--- a/join/views.py	(revision f055a6ddde7d534229b7441fb38dd87453fc24a5)
+++++ b/join/views.py	(date 1657087118624)
++@@ -1,11 +1,10 @@
++ import json
++ 
+++from django.core import serializers
++ from django.http import HttpResponse
++ from django.shortcuts import render, redirect
++-import request
++ # Create your views here.
++ from django.views import View
++-from django.core import serializers
++ 
++ from join.models import Zipcode, Member
++ 
++Index: question/migrations/0001_initial.py
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/question/migrations/0001_initial.py b/question/migrations/0001_initial.py
++new file mode 100644
++--- /dev/null	(date 1657086784841)
+++++ b/question/migrations/0001_initial.py	(date 1657086784841)
++@@ -0,0 +1,31 @@
+++# Generated by Django 4.0.5 on 2022-07-06 14:53
+++
+++import datetime
+++from django.db import migrations, models
+++
+++
+++class Migration(migrations.Migration):
+++
+++    initial = True
+++
+++    dependencies = [
+++    ]
+++
+++    operations = [
+++        migrations.CreateModel(
+++            name='Question',
+++            fields=[
+++                ('id', models.AutoField(primary_key=True, serialize=False)),
+++                ('qname', models.CharField(max_length=16)),
+++                ('qphone', models.CharField(max_length=16)),
+++                ('qemail', models.CharField(max_length=40)),
+++                ('qselect', models.CharField(max_length=20)),
+++                ('qsubject', models.TextField()),
+++                ('context', models.TextField()),
+++                ('regdate', models.DateTimeField(default=datetime.datetime.now)),
+++            ],
+++            options={
+++                'db_table': 'qestion',
+++            },
+++        ),
+++    ]
++Index: .idea/dataSources.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DataSourceManagerImpl\" format=\"xml\" multifile-model=\"true\">\r\n    <data-source source=\"LOCAL\" name=\"db\" uuid=\"a63b4271-cded-414a-972f-743303cd0ce4\">\r\n      <driver-ref>sqlite.xerial</driver-ref>\r\n      <synchronize>true</synchronize>\r\n      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>\r\n      <jdbc-url>jdbc:sqlite:E:\\VIAP_Project\\db.sqlite3</jdbc-url>\r\n      <working-dir>$ProjectFileDir$</working-dir>\r\n      <libraries>\r\n        <library>\r\n          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.36.0.3/sqlite-jdbc-3.36.0.3.jar</url>\r\n        </library>\r\n      </libraries>\r\n    </data-source>\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
++--- a/.idea/dataSources.xml	(revision f055a6ddde7d534229b7441fb38dd87453fc24a5)
+++++ b/.idea/dataSources.xml	(date 1657087004486)
++@@ -1,6 +1,18 @@
++ <?xml version="1.0" encoding="UTF-8"?>
++ <project version="4">
++   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+++    <data-source source="LOCAL" name="db" uuid="b0059ed5-7b79-4007-a96a-6a1f1bba5c08">
+++      <driver-ref>sqlite.xerial</driver-ref>
+++      <synchronize>true</synchronize>
+++      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+++      <jdbc-url>jdbc:sqlite:C:\Users\bigdata.DESKTOP-RIJG1CD\Documents\projects\VIAP_Project_test\db.sqlite3</jdbc-url>
+++      <working-dir>$ProjectFileDir$</working-dir>
+++      <libraries>
+++        <library>
+++          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.36.0.3/sqlite-jdbc-3.36.0.3.jar</url>
+++        </library>
+++      </libraries>
+++    </data-source>
++     <data-source source="LOCAL" name="db" uuid="a63b4271-cded-414a-972f-743303cd0ce4">
++       <driver-ref>sqlite.xerial</driver-ref>
++       <synchronize>true</synchronize>
++Index: question/migrations/0002_alter_question_table.py
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/question/migrations/0002_alter_question_table.py b/question/migrations/0002_alter_question_table.py
++new file mode 100644
++--- /dev/null	(date 1657089423676)
+++++ b/question/migrations/0002_alter_question_table.py	(date 1657089423676)
++@@ -0,0 +1,17 @@
+++# Generated by Django 4.0.5 on 2022-07-06 15:37
+++
+++from django.db import migrations
+++
+++
+++class Migration(migrations.Migration):
+++
+++    dependencies = [
+++        ('question', '0001_initial'),
+++    ]
+++
+++    operations = [
+++        migrations.AlterModelTable(
+++            name='question',
+++            table='question',
+++        ),
+++    ]
+Index: .idea/shelf/2022-07-06__4_10__________.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/2022-07-06__4_10__________.xml b/.idea/shelf/2022-07-06__4_10__________.xml
+new file mode 100644
+--- /dev/null	(date 1657091488309)
++++ b/.idea/shelf/2022-07-06__4_10__________.xml	(date 1657091488309)
+@@ -0,0 +1,4 @@
++<changelist name="2022-07-06_오후_4_10,_업데이트_전에_커밋되지_않은_변경_내용_[변경]" date="1657091426859" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/2022-07-06_오후_4_10,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch" />
++  <option name="DESCRIPTION" value="2022-07-06 오후 4:10, 업데이트 전에 커밋되지 않은 변경 내용 [변경]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/VIAP_Project_test.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/VIAP_Project_test.iml b/.idea/VIAP_Project_test.iml
+new file mode 100644
+--- /dev/null	(date 1657012508770)
++++ b/.idea/VIAP_Project_test.iml	(date 1657012508770)
+@@ -0,0 +1,32 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="FacetManager">
++    <facet type="django" name="Django">
++      <configuration>
++        <option name="rootFolder" value="$MODULE_DIR$" />
++        <option name="settingsModule" value="VIAP_Project/settings.py" />
++        <option name="manageScript" value="$MODULE_DIR$/manage.py" />
++        <option name="environment" value="&lt;map/&gt;" />
++        <option name="doNotUseTestRunner" value="false" />
++        <option name="trackFilePattern" value="migrations" />
++      </configuration>
++    </facet>
++  </component>
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="PyDocumentationSettings">
++    <option name="format" value="PLAIN" />
++    <option name="myDocStringFormat" value="Plain" />
++  </component>
++  <component name="TemplatesService">
++    <option name="TEMPLATE_CONFIGURATION" value="Django" />
++    <option name="TEMPLATE_FOLDERS">
++      <list>
++        <option value="$MODULE_DIR$/templates" />
++      </list>
++    </option>
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1657012304606)
++++ b/.idea/modules.xml	(date 1657012304606)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/VIAP_Project_test.iml" filepath="$PROJECT_DIR$/.idea/VIAP_Project_test.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1657012304678)
++++ b/.idea/misc.xml	(date 1657012304678)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: .idea/dataSources/b0059ed5-7b79-4007-a96a-6a1f1bba5c08.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources/b0059ed5-7b79-4007-a96a-6a1f1bba5c08.xml b/.idea/dataSources/b0059ed5-7b79-4007-a96a-6a1f1bba5c08.xml
+new file mode 100644
+--- /dev/null	(date 1657089470949)
++++ b/.idea/dataSources/b0059ed5-7b79-4007-a96a-6a1f1bba5c08.xml	(date 1657089470949)
+@@ -0,0 +1,1899 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<dataSource name="db">
++  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.38">
++    <root id="1">
++      <ServerVersion>3.36.0</ServerVersion>
++    </root>
++    <collation id="2" parent="1" name="BINARY"/>
++    <collation id="3" parent="1" name="NOCASE"/>
++    <collation id="4" parent="1" name="RTRIM"/>
++    <package id="5" parent="1" name="fts3"/>
++    <package id="6" parent="1" name="fts3tokenize"/>
++    <package id="7" parent="1" name="fts4"/>
++    <package id="8" parent="1" name="fts4aux"/>
++    <package id="9" parent="1" name="fts5"/>
++    <package id="10" parent="1" name="fts5vocab"/>
++    <package id="11" parent="1" name="json_each"/>
++    <package id="12" parent="1" name="json_tree"/>
++    <package id="13" parent="1" name="rtree"/>
++    <package id="14" parent="1" name="rtree_i32"/>
++    <routine id="15" parent="1" name="abs">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="16" parent="1" name="acos"/>
++    <routine id="17" parent="1" name="acosh"/>
++    <routine id="18" parent="1" name="asin"/>
++    <routine id="19" parent="1" name="asinh"/>
++    <routine id="20" parent="1" name="atan"/>
++    <routine id="21" parent="1" name="atan2"/>
++    <routine id="22" parent="1" name="atanh"/>
++    <routine id="23" parent="1" name="atn2"/>
++    <routine id="24" parent="1" name="avg">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="25" parent="1" name="bm25">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="26" parent="1" name="ceil"/>
++    <routine id="27" parent="1" name="changes"/>
++    <routine id="28" parent="1" name="char">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="29" parent="1" name="charindex"/>
++    <routine id="30" parent="1" name="charindex"/>
++    <routine id="31" parent="1" name="coalesce">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="32" parent="1" name="cos"/>
++    <routine id="33" parent="1" name="cosh"/>
++    <routine id="34" parent="1" name="cot"/>
++    <routine id="35" parent="1" name="coth"/>
++    <routine id="36" parent="1" name="count">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="37" parent="1" name="cume_dist">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="38" parent="1" name="current_date"/>
++    <routine id="39" parent="1" name="current_time"/>
++    <routine id="40" parent="1" name="current_timestamp"/>
++    <routine id="41" parent="1" name="date">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="42" parent="1" name="datetime">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="43" parent="1" name="degrees"/>
++    <routine id="44" parent="1" name="dense_rank">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="45" parent="1" name="difference"/>
++    <routine id="46" parent="1" name="exp"/>
++    <routine id="47" parent="1" name="first_value">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="48" parent="1" name="floor"/>
++    <routine id="49" parent="1" name="fts3_tokenizer"/>
++    <routine id="50" parent="1" name="fts3_tokenizer"/>
++    <routine id="51" parent="1" name="fts5"/>
++    <routine id="52" parent="1" name="fts5_source_id"/>
++    <routine id="53" parent="1" name="glob">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="54" parent="1" name="group_concat">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="55" parent="1" name="hex">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="56" parent="1" name="highlight">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="57" parent="1" name="ifnull">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="58" parent="1" name="iif">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="59" parent="1" name="instr">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="60" parent="1" name="json">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="61" parent="1" name="json_array">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="62" parent="1" name="json_array_length">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="63" parent="1" name="json_array_length">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="64" parent="1" name="json_extract">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="65" parent="1" name="json_group_array">
++      <Deterministic>1</Deterministic>
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="66" parent="1" name="json_group_object">
++      <Deterministic>1</Deterministic>
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="67" parent="1" name="json_insert">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="68" parent="1" name="json_object">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="69" parent="1" name="json_patch">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="70" parent="1" name="json_quote">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="71" parent="1" name="json_remove">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="72" parent="1" name="json_replace">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="73" parent="1" name="json_set">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="74" parent="1" name="json_type">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="75" parent="1" name="json_type">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="76" parent="1" name="json_valid">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="77" parent="1" name="julianday">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="78" parent="1" name="lag">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="79" parent="1" name="lag">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="80" parent="1" name="last_insert_rowid"/>
++    <routine id="81" parent="1" name="last_value">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="82" parent="1" name="lead">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="83" parent="1" name="lead">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="84" parent="1" name="leftstr"/>
++    <routine id="85" parent="1" name="length">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="86" parent="1" name="like">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="87" parent="1" name="likelihood">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="88" parent="1" name="likely">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="89" parent="1" name="load_extension"/>
++    <routine id="90" parent="1" name="log"/>
++    <routine id="91" parent="1" name="log10"/>
++    <routine id="92" parent="1" name="lower">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="93" parent="1" name="lower_quartile">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="94" parent="1" name="ltrim">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="95" parent="1" name="match"/>
++    <routine id="96" parent="1" name="matchinfo"/>
++    <routine id="97" parent="1" name="matchinfo"/>
++    <routine id="98" parent="1" name="max">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="99" parent="1" name="max">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="100" parent="1" name="median">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="101" parent="1" name="min">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="102" parent="1" name="min">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="103" parent="1" name="mode">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="104" parent="1" name="nth_value">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="105" parent="1" name="ntile">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="106" parent="1" name="nullif">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="107" parent="1" name="offsets"/>
++    <routine id="108" parent="1" name="optimize"/>
++    <routine id="109" parent="1" name="padc"/>
++    <routine id="110" parent="1" name="padl"/>
++    <routine id="111" parent="1" name="padr"/>
++    <routine id="112" parent="1" name="percent_rank">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="113" parent="1" name="pi"/>
++    <routine id="114" parent="1" name="power"/>
++    <routine id="115" parent="1" name="printf">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="116" parent="1" name="proper"/>
++    <routine id="117" parent="1" name="quote">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="118" parent="1" name="radians"/>
++    <routine id="119" parent="1" name="random"/>
++    <routine id="120" parent="1" name="randomblob"/>
++    <routine id="121" parent="1" name="rank">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="122" parent="1" name="regexp">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="123" parent="1" name="replace">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="124" parent="1" name="replicate"/>
++    <routine id="125" parent="1" name="reverse"/>
++    <routine id="126" parent="1" name="rightstr"/>
++    <routine id="127" parent="1" name="round">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="128" parent="1" name="row_number">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="129" parent="1" name="rtreecheck">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="130" parent="1" name="rtreedepth"/>
++    <routine id="131" parent="1" name="rtreenode"/>
++    <routine id="132" parent="1" name="rtrim">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="133" parent="1" name="sign">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="134" parent="1" name="sin"/>
++    <routine id="135" parent="1" name="sinh"/>
++    <routine id="136" parent="1" name="snippet">
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="137" parent="1" name="sqlite_compileoption_get"/>
++    <routine id="138" parent="1" name="sqlite_compileoption_used"/>
++    <routine id="139" parent="1" name="sqlite_log">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="140" parent="1" name="sqlite_source_id"/>
++    <routine id="141" parent="1" name="sqlite_version"/>
++    <routine id="142" parent="1" name="sqrt"/>
++    <routine id="143" parent="1" name="square"/>
++    <routine id="144" parent="1" name="stdev">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="145" parent="1" name="strfilter"/>
++    <routine id="146" parent="1" name="strftime">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="147" parent="1" name="substr">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="148" parent="1" name="substring">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="149" parent="1" name="sum">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="150" parent="1" name="tan"/>
++    <routine id="151" parent="1" name="tanh"/>
++    <routine id="152" parent="1" name="time">
++      <Deterministic>1</Deterministic>
++      <Variadic>1</Variadic>
++    </routine>
++    <routine id="153" parent="1" name="total">
++      <FunctionType>window</FunctionType>
++    </routine>
++    <routine id="154" parent="1" name="total_changes"/>
++    <routine id="155" parent="1" name="trim">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="156" parent="1" name="typeof">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="157" parent="1" name="unicode">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="158" parent="1" name="unlikely">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="159" parent="1" name="upper">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <routine id="160" parent="1" name="upper_quartile">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="161" parent="1" name="variance">
++      <FunctionType>aggregate</FunctionType>
++    </routine>
++    <routine id="162" parent="1" name="zeroblob">
++      <Deterministic>1</Deterministic>
++    </routine>
++    <schema id="163" parent="1" name="main">
++      <Current>1</Current>
++    </schema>
++    <argument id="164" parent="15">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="165" parent="15">
++      <Position>1</Position>
++    </argument>
++    <argument id="166" parent="16">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="167" parent="16">
++      <Position>1</Position>
++    </argument>
++    <argument id="168" parent="17">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="169" parent="17">
++      <Position>1</Position>
++    </argument>
++    <argument id="170" parent="18">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="171" parent="18">
++      <Position>1</Position>
++    </argument>
++    <argument id="172" parent="19">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="173" parent="19">
++      <Position>1</Position>
++    </argument>
++    <argument id="174" parent="20">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="175" parent="20">
++      <Position>1</Position>
++    </argument>
++    <argument id="176" parent="21">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="177" parent="21">
++      <Position>1</Position>
++    </argument>
++    <argument id="178" parent="21">
++      <Position>2</Position>
++    </argument>
++    <argument id="179" parent="22">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="180" parent="22">
++      <Position>1</Position>
++    </argument>
++    <argument id="181" parent="23">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="182" parent="23">
++      <Position>1</Position>
++    </argument>
++    <argument id="183" parent="23">
++      <Position>2</Position>
++    </argument>
++    <argument id="184" parent="24">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="185" parent="24">
++      <Position>1</Position>
++    </argument>
++    <argument id="186" parent="25">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="187" parent="26">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="188" parent="26">
++      <Position>1</Position>
++    </argument>
++    <argument id="189" parent="27">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="190" parent="28">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="191" parent="29">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="192" parent="29">
++      <Position>1</Position>
++    </argument>
++    <argument id="193" parent="29">
++      <Position>2</Position>
++    </argument>
++    <argument id="194" parent="30">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="195" parent="30">
++      <Position>1</Position>
++    </argument>
++    <argument id="196" parent="30">
++      <Position>2</Position>
++    </argument>
++    <argument id="197" parent="30">
++      <Position>3</Position>
++    </argument>
++    <argument id="198" parent="31">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="199" parent="32">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="200" parent="32">
++      <Position>1</Position>
++    </argument>
++    <argument id="201" parent="33">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="202" parent="33">
++      <Position>1</Position>
++    </argument>
++    <argument id="203" parent="34">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="204" parent="34">
++      <Position>1</Position>
++    </argument>
++    <argument id="205" parent="35">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="206" parent="35">
++      <Position>1</Position>
++    </argument>
++    <argument id="207" parent="36">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="208" parent="36">
++      <Position>1</Position>
++    </argument>
++    <argument id="209" parent="37">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="210" parent="38">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="211" parent="39">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="212" parent="40">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="213" parent="41">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="214" parent="42">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="215" parent="43">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="216" parent="43">
++      <Position>1</Position>
++    </argument>
++    <argument id="217" parent="44">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="218" parent="45">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="219" parent="45">
++      <Position>1</Position>
++    </argument>
++    <argument id="220" parent="45">
++      <Position>2</Position>
++    </argument>
++    <argument id="221" parent="46">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="222" parent="46">
++      <Position>1</Position>
++    </argument>
++    <argument id="223" parent="47">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="224" parent="47">
++      <Position>1</Position>
++    </argument>
++    <argument id="225" parent="48">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="226" parent="48">
++      <Position>1</Position>
++    </argument>
++    <argument id="227" parent="49">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="228" parent="49">
++      <Position>1</Position>
++    </argument>
++    <argument id="229" parent="50">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="230" parent="50">
++      <Position>1</Position>
++    </argument>
++    <argument id="231" parent="50">
++      <Position>2</Position>
++    </argument>
++    <argument id="232" parent="51">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="233" parent="51">
++      <Position>1</Position>
++    </argument>
++    <argument id="234" parent="52">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="235" parent="53">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="236" parent="53">
++      <Position>1</Position>
++    </argument>
++    <argument id="237" parent="53">
++      <Position>2</Position>
++    </argument>
++    <argument id="238" parent="54">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="239" parent="54">
++      <Position>1</Position>
++    </argument>
++    <argument id="240" parent="54">
++      <Position>2</Position>
++    </argument>
++    <argument id="241" parent="55">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="242" parent="55">
++      <Position>1</Position>
++    </argument>
++    <argument id="243" parent="56">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="244" parent="57">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="245" parent="57">
++      <Position>1</Position>
++    </argument>
++    <argument id="246" parent="57">
++      <Position>2</Position>
++    </argument>
++    <argument id="247" parent="58">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="248" parent="58">
++      <Position>1</Position>
++    </argument>
++    <argument id="249" parent="58">
++      <Position>2</Position>
++    </argument>
++    <argument id="250" parent="58">
++      <Position>3</Position>
++    </argument>
++    <argument id="251" parent="59">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="252" parent="59">
++      <Position>1</Position>
++    </argument>
++    <argument id="253" parent="59">
++      <Position>2</Position>
++    </argument>
++    <argument id="254" parent="60">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="255" parent="60">
++      <Position>1</Position>
++    </argument>
++    <argument id="256" parent="61">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="257" parent="62">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="258" parent="62">
++      <Position>1</Position>
++    </argument>
++    <argument id="259" parent="63">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="260" parent="63">
++      <Position>1</Position>
++    </argument>
++    <argument id="261" parent="63">
++      <Position>2</Position>
++    </argument>
++    <argument id="262" parent="64">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="263" parent="65">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="264" parent="65">
++      <Position>1</Position>
++    </argument>
++    <argument id="265" parent="66">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="266" parent="66">
++      <Position>1</Position>
++    </argument>
++    <argument id="267" parent="66">
++      <Position>2</Position>
++    </argument>
++    <argument id="268" parent="67">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="269" parent="68">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="270" parent="69">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="271" parent="69">
++      <Position>1</Position>
++    </argument>
++    <argument id="272" parent="69">
++      <Position>2</Position>
++    </argument>
++    <argument id="273" parent="70">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="274" parent="70">
++      <Position>1</Position>
++    </argument>
++    <argument id="275" parent="71">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="276" parent="72">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="277" parent="73">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="278" parent="74">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="279" parent="74">
++      <Position>1</Position>
++    </argument>
++    <argument id="280" parent="75">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="281" parent="75">
++      <Position>1</Position>
++    </argument>
++    <argument id="282" parent="75">
++      <Position>2</Position>
++    </argument>
++    <argument id="283" parent="76">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="284" parent="76">
++      <Position>1</Position>
++    </argument>
++    <argument id="285" parent="77">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="286" parent="78">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="287" parent="78">
++      <Position>1</Position>
++    </argument>
++    <argument id="288" parent="78">
++      <Position>2</Position>
++    </argument>
++    <argument id="289" parent="79">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="290" parent="79">
++      <Position>1</Position>
++    </argument>
++    <argument id="291" parent="79">
++      <Position>2</Position>
++    </argument>
++    <argument id="292" parent="79">
++      <Position>3</Position>
++    </argument>
++    <argument id="293" parent="80">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="294" parent="81">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="295" parent="81">
++      <Position>1</Position>
++    </argument>
++    <argument id="296" parent="82">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="297" parent="82">
++      <Position>1</Position>
++    </argument>
++    <argument id="298" parent="82">
++      <Position>2</Position>
++    </argument>
++    <argument id="299" parent="83">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="300" parent="83">
++      <Position>1</Position>
++    </argument>
++    <argument id="301" parent="83">
++      <Position>2</Position>
++    </argument>
++    <argument id="302" parent="83">
++      <Position>3</Position>
++    </argument>
++    <argument id="303" parent="84">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="304" parent="84">
++      <Position>1</Position>
++    </argument>
++    <argument id="305" parent="84">
++      <Position>2</Position>
++    </argument>
++    <argument id="306" parent="85">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="307" parent="85">
++      <Position>1</Position>
++    </argument>
++    <argument id="308" parent="86">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="309" parent="86">
++      <Position>1</Position>
++    </argument>
++    <argument id="310" parent="86">
++      <Position>2</Position>
++    </argument>
++    <argument id="311" parent="86">
++      <Position>3</Position>
++    </argument>
++    <argument id="312" parent="87">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="313" parent="87">
++      <Position>1</Position>
++    </argument>
++    <argument id="314" parent="87">
++      <Position>2</Position>
++    </argument>
++    <argument id="315" parent="88">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="316" parent="88">
++      <Position>1</Position>
++    </argument>
++    <argument id="317" parent="89">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="318" parent="89">
++      <Position>1</Position>
++    </argument>
++    <argument id="319" parent="89">
++      <Position>2</Position>
++    </argument>
++    <argument id="320" parent="90">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="321" parent="90">
++      <Position>1</Position>
++    </argument>
++    <argument id="322" parent="91">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="323" parent="91">
++      <Position>1</Position>
++    </argument>
++    <argument id="324" parent="92">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="325" parent="92">
++      <Position>1</Position>
++    </argument>
++    <argument id="326" parent="93">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="327" parent="93">
++      <Position>1</Position>
++    </argument>
++    <argument id="328" parent="94">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="329" parent="94">
++      <Position>1</Position>
++    </argument>
++    <argument id="330" parent="94">
++      <Position>2</Position>
++    </argument>
++    <argument id="331" parent="95">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="332" parent="95">
++      <Position>1</Position>
++    </argument>
++    <argument id="333" parent="95">
++      <Position>2</Position>
++    </argument>
++    <argument id="334" parent="96">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="335" parent="96">
++      <Position>1</Position>
++    </argument>
++    <argument id="336" parent="97">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="337" parent="97">
++      <Position>1</Position>
++    </argument>
++    <argument id="338" parent="97">
++      <Position>2</Position>
++    </argument>
++    <argument id="339" parent="98">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="340" parent="99">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="341" parent="99">
++      <Position>1</Position>
++    </argument>
++    <argument id="342" parent="100">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="343" parent="100">
++      <Position>1</Position>
++    </argument>
++    <argument id="344" parent="101">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="345" parent="102">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="346" parent="102">
++      <Position>1</Position>
++    </argument>
++    <argument id="347" parent="103">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="348" parent="103">
++      <Position>1</Position>
++    </argument>
++    <argument id="349" parent="104">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="350" parent="104">
++      <Position>1</Position>
++    </argument>
++    <argument id="351" parent="104">
++      <Position>2</Position>
++    </argument>
++    <argument id="352" parent="105">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="353" parent="105">
++      <Position>1</Position>
++    </argument>
++    <argument id="354" parent="106">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="355" parent="106">
++      <Position>1</Position>
++    </argument>
++    <argument id="356" parent="106">
++      <Position>2</Position>
++    </argument>
++    <argument id="357" parent="107">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="358" parent="107">
++      <Position>1</Position>
++    </argument>
++    <argument id="359" parent="108">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="360" parent="108">
++      <Position>1</Position>
++    </argument>
++    <argument id="361" parent="109">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="362" parent="109">
++      <Position>1</Position>
++    </argument>
++    <argument id="363" parent="109">
++      <Position>2</Position>
++    </argument>
++    <argument id="364" parent="110">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="365" parent="110">
++      <Position>1</Position>
++    </argument>
++    <argument id="366" parent="110">
++      <Position>2</Position>
++    </argument>
++    <argument id="367" parent="111">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="368" parent="111">
++      <Position>1</Position>
++    </argument>
++    <argument id="369" parent="111">
++      <Position>2</Position>
++    </argument>
++    <argument id="370" parent="112">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="371" parent="113">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="372" parent="114">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="373" parent="114">
++      <Position>1</Position>
++    </argument>
++    <argument id="374" parent="114">
++      <Position>2</Position>
++    </argument>
++    <argument id="375" parent="115">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="376" parent="116">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="377" parent="116">
++      <Position>1</Position>
++    </argument>
++    <argument id="378" parent="117">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="379" parent="117">
++      <Position>1</Position>
++    </argument>
++    <argument id="380" parent="118">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="381" parent="118">
++      <Position>1</Position>
++    </argument>
++    <argument id="382" parent="119">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="383" parent="120">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="384" parent="120">
++      <Position>1</Position>
++    </argument>
++    <argument id="385" parent="121">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="386" parent="122">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="387" parent="123">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="388" parent="123">
++      <Position>1</Position>
++    </argument>
++    <argument id="389" parent="123">
++      <Position>2</Position>
++    </argument>
++    <argument id="390" parent="123">
++      <Position>3</Position>
++    </argument>
++    <argument id="391" parent="124">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="392" parent="124">
++      <Position>1</Position>
++    </argument>
++    <argument id="393" parent="124">
++      <Position>2</Position>
++    </argument>
++    <argument id="394" parent="125">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="395" parent="125">
++      <Position>1</Position>
++    </argument>
++    <argument id="396" parent="126">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="397" parent="126">
++      <Position>1</Position>
++    </argument>
++    <argument id="398" parent="126">
++      <Position>2</Position>
++    </argument>
++    <argument id="399" parent="127">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="400" parent="127">
++      <Position>1</Position>
++    </argument>
++    <argument id="401" parent="127">
++      <Position>2</Position>
++    </argument>
++    <argument id="402" parent="128">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="403" parent="129">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="404" parent="130">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="405" parent="130">
++      <Position>1</Position>
++    </argument>
++    <argument id="406" parent="131">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="407" parent="131">
++      <Position>1</Position>
++    </argument>
++    <argument id="408" parent="131">
++      <Position>2</Position>
++    </argument>
++    <argument id="409" parent="132">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="410" parent="132">
++      <Position>1</Position>
++    </argument>
++    <argument id="411" parent="132">
++      <Position>2</Position>
++    </argument>
++    <argument id="412" parent="133">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="413" parent="133">
++      <Position>1</Position>
++    </argument>
++    <argument id="414" parent="134">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="415" parent="134">
++      <Position>1</Position>
++    </argument>
++    <argument id="416" parent="135">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="417" parent="135">
++      <Position>1</Position>
++    </argument>
++    <argument id="418" parent="136">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="419" parent="137">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="420" parent="137">
++      <Position>1</Position>
++    </argument>
++    <argument id="421" parent="138">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="422" parent="138">
++      <Position>1</Position>
++    </argument>
++    <argument id="423" parent="139">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="424" parent="139">
++      <Position>1</Position>
++    </argument>
++    <argument id="425" parent="139">
++      <Position>2</Position>
++    </argument>
++    <argument id="426" parent="140">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="427" parent="141">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="428" parent="142">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="429" parent="142">
++      <Position>1</Position>
++    </argument>
++    <argument id="430" parent="143">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="431" parent="143">
++      <Position>1</Position>
++    </argument>
++    <argument id="432" parent="144">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="433" parent="144">
++      <Position>1</Position>
++    </argument>
++    <argument id="434" parent="145">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="435" parent="145">
++      <Position>1</Position>
++    </argument>
++    <argument id="436" parent="145">
++      <Position>2</Position>
++    </argument>
++    <argument id="437" parent="146">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="438" parent="147">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="439" parent="147">
++      <Position>1</Position>
++    </argument>
++    <argument id="440" parent="147">
++      <Position>2</Position>
++    </argument>
++    <argument id="441" parent="147">
++      <Position>3</Position>
++    </argument>
++    <argument id="442" parent="148">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="443" parent="148">
++      <Position>1</Position>
++    </argument>
++    <argument id="444" parent="148">
++      <Position>2</Position>
++    </argument>
++    <argument id="445" parent="148">
++      <Position>3</Position>
++    </argument>
++    <argument id="446" parent="149">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="447" parent="149">
++      <Position>1</Position>
++    </argument>
++    <argument id="448" parent="150">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="449" parent="150">
++      <Position>1</Position>
++    </argument>
++    <argument id="450" parent="151">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="451" parent="151">
++      <Position>1</Position>
++    </argument>
++    <argument id="452" parent="152">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="453" parent="153">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="454" parent="153">
++      <Position>1</Position>
++    </argument>
++    <argument id="455" parent="154">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="456" parent="155">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="457" parent="155">
++      <Position>1</Position>
++    </argument>
++    <argument id="458" parent="155">
++      <Position>2</Position>
++    </argument>
++    <argument id="459" parent="156">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="460" parent="156">
++      <Position>1</Position>
++    </argument>
++    <argument id="461" parent="157">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="462" parent="157">
++      <Position>1</Position>
++    </argument>
++    <argument id="463" parent="158">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="464" parent="158">
++      <Position>1</Position>
++    </argument>
++    <argument id="465" parent="159">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="466" parent="159">
++      <Position>1</Position>
++    </argument>
++    <argument id="467" parent="160">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="468" parent="160">
++      <Position>1</Position>
++    </argument>
++    <argument id="469" parent="161">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="470" parent="161">
++      <Position>1</Position>
++    </argument>
++    <argument id="471" parent="162">
++      <ArgumentDirection>R</ArgumentDirection>
++    </argument>
++    <argument id="472" parent="162">
++      <Position>1</Position>
++    </argument>
++    <table id="473" parent="163" name="auth_group"/>
++    <table id="474" parent="163" name="auth_group_permissions"/>
++    <table id="475" parent="163" name="auth_permission"/>
++    <table id="476" parent="163" name="auth_user"/>
++    <table id="477" parent="163" name="auth_user_groups"/>
++    <table id="478" parent="163" name="auth_user_user_permissions"/>
++    <table id="479" parent="163" name="django_admin_log"/>
++    <table id="480" parent="163" name="django_content_type"/>
++    <table id="481" parent="163" name="django_migrations"/>
++    <table id="482" parent="163" name="django_session"/>
++    <table id="483" parent="163" name="member"/>
++    <table id="484" parent="163" name="question"/>
++    <table id="485" parent="163" name="sqlite_master">
++      <System>1</System>
++    </table>
++    <table id="486" parent="163" name="sqlite_sequence">
++      <System>1</System>
++    </table>
++    <table id="487" parent="163" name="zipcode"/>
++    <column id="488" parent="473" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="489" parent="473" name="name">
++      <DataType>varchar(150)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <index id="490" parent="473" name="sqlite_autoindex_auth_group_1">
++      <ColNames>name</ColNames>
++      <NameSurrogate>1</NameSurrogate>
++      <Unique>1</Unique>
++    </index>
++    <key id="491" parent="473">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <key id="492" parent="473">
++      <ColNames>name</ColNames>
++      <UnderlyingIndexName>sqlite_autoindex_auth_group_1</UnderlyingIndexName>
++    </key>
++    <column id="493" parent="474" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="494" parent="474" name="group_id">
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="495" parent="474" name="permission_id">
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>3</Position>
++    </column>
++    <foreign-key id="496" parent="474">
++      <ColNames>group_id</ColNames>
++      <Deferrable>1</Deferrable>
++      <InitiallyDeferred>1</InitiallyDeferred>
++      <RefColNames>id</RefColNames>
++      <RefTableName>auth_group</RefTableName>
++    </foreign-key>
++    <foreign-key id="497" parent="474">
++      <ColNames>permission_id</ColNames>
++      <Deferrable>1</Deferrable>
++      <InitiallyDeferred>1</InitiallyDeferred>
++      <RefColNames>id</RefColNames>
++      <RefTableName>auth_permission</RefTableName>
++    </foreign-key>
++    <index id="498" parent="474" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
++      <ColNames>group_id
++permission_id</ColNames>
++      <Unique>1</Unique>
++    </index>
++    <index id="499" parent="474" name="auth_group_permissions_group_id_b120cbf9">
++      <ColNames>group_id</ColNames>
++    </index>
++    <index id="500" parent="474" name="auth_group_permissions_permission_id_84c5c92e">
++      <ColNames>permission_id</ColNames>
++    </index>
++    <key id="501" parent="474">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <column id="502" parent="475" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="503" parent="475" name="content_type_id">
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="504" parent="475" name="codename">
++      <DataType>varchar(100)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>3</Position>
++    </column>
++    <column id="505" parent="475" name="name">
++      <DataType>varchar(255)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>4</Position>
++    </column>
++    <foreign-key id="506" parent="475">
++      <ColNames>content_type_id</ColNames>
++      <Deferrable>1</Deferrable>
++      <InitiallyDeferred>1</InitiallyDeferred>
++      <RefColNames>id</RefColNames>
++      <RefTableName>django_content_type</RefTableName>
++    </foreign-key>
++    <index id="507" parent="475" name="auth_permission_content_type_id_codename_01ab375a_uniq">
++      <ColNames>content_type_id
++codename</ColNames>
++      <Unique>1</Unique>
++    </index>
++    <index id="508" parent="475" name="auth_permission_content_type_id_2f476e4b">
++      <ColNames>content_type_id</ColNames>
++    </index>
++    <key id="509" parent="475">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <column id="510" parent="476" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="511" parent="476" name="password">
++      <DataType>varchar(128)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="512" parent="476" name="last_login">
++      <DataType>datetime|0s</DataType>
++      <Position>3</Position>
++    </column>
++    <column id="513" parent="476" name="is_superuser">
++      <DataType>bool|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>4</Position>
++    </column>
++    <column id="514" parent="476" name="username">
++      <DataType>varchar(150)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>5</Position>
++    </column>
++    <column id="515" parent="476" name="last_name">
++      <DataType>varchar(150)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>6</Position>
++    </column>
++    <column id="516" parent="476" name="email">
++      <DataType>varchar(254)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>7</Position>
++    </column>
++    <column id="517" parent="476" name="is_staff">
++      <DataType>bool|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>8</Position>
++    </column>
++    <column id="518" parent="476" name="is_active">
++      <DataType>bool|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>9</Position>
++    </column>
++    <column id="519" parent="476" name="date_joined">
++      <DataType>datetime|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>10</Position>
++    </column>
++    <column id="520" parent="476" name="first_name">
++      <DataType>varchar(150)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>11</Position>
++    </column>
++    <index id="521" parent="476" name="sqlite_autoindex_auth_user_1">
++      <ColNames>username</ColNames>
++      <NameSurrogate>1</NameSurrogate>
++      <Unique>1</Unique>
++    </index>
++    <key id="522" parent="476">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <key id="523" parent="476">
++      <ColNames>username</ColNames>
++      <UnderlyingIndexName>sqlite_autoindex_auth_user_1</UnderlyingIndexName>
++    </key>
++    <column id="524" parent="477" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="525" parent="477" name="user_id">
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="526" parent="477" name="group_id">
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>3</Position>
++    </column>
++    <foreign-key id="527" parent="477">
++      <ColNames>user_id</ColNames>
++      <Deferrable>1</Deferrable>
++      <InitiallyDeferred>1</InitiallyDeferred>
++      <RefColNames>id</RefColNames>
++      <RefTableName>auth_user</RefTableName>
++    </foreign-key>
++    <foreign-key id="528" parent="477">
++      <ColNames>group_id</ColNames>
++      <Deferrable>1</Deferrable>
++      <InitiallyDeferred>1</InitiallyDeferred>
++      <RefColNames>id</RefColNames>
++      <RefTableName>auth_group</RefTableName>
++    </foreign-key>
++    <index id="529" parent="477" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
++      <ColNames>user_id
++group_id</ColNames>
++      <Unique>1</Unique>
++    </index>
++    <index id="530" parent="477" name="auth_user_groups_user_id_6a12ed8b">
++      <ColNames>user_id</ColNames>
++    </index>
++    <index id="531" parent="477" name="auth_user_groups_group_id_97559544">
++      <ColNames>group_id</ColNames>
++    </index>
++    <key id="532" parent="477">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <column id="533" parent="478" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="534" parent="478" name="user_id">
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="535" parent="478" name="permission_id">
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>3</Position>
++    </column>
++    <foreign-key id="536" parent="478">
++      <ColNames>user_id</ColNames>
++      <Deferrable>1</Deferrable>
++      <InitiallyDeferred>1</InitiallyDeferred>
++      <RefColNames>id</RefColNames>
++      <RefTableName>auth_user</RefTableName>
++    </foreign-key>
++    <foreign-key id="537" parent="478">
++      <ColNames>permission_id</ColNames>
++      <Deferrable>1</Deferrable>
++      <InitiallyDeferred>1</InitiallyDeferred>
++      <RefColNames>id</RefColNames>
++      <RefTableName>auth_permission</RefTableName>
++    </foreign-key>
++    <index id="538" parent="478" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
++      <ColNames>user_id
++permission_id</ColNames>
++      <Unique>1</Unique>
++    </index>
++    <index id="539" parent="478" name="auth_user_user_permissions_user_id_a95ead1b">
++      <ColNames>user_id</ColNames>
++    </index>
++    <index id="540" parent="478" name="auth_user_user_permissions_permission_id_1fbb5f2c">
++      <ColNames>permission_id</ColNames>
++    </index>
++    <key id="541" parent="478">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <check id="542" parent="479">
++      <Predicate>&quot;action_flag&quot; &gt;= 0</Predicate>
++    </check>
++    <column id="543" parent="479" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="544" parent="479" name="action_time">
++      <DataType>datetime|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="545" parent="479" name="object_id">
++      <DataType>text|0s</DataType>
++      <Position>3</Position>
++    </column>
++    <column id="546" parent="479" name="object_repr">
++      <DataType>varchar(200)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>4</Position>
++    </column>
++    <column id="547" parent="479" name="change_message">
++      <DataType>text|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>5</Position>
++    </column>
++    <column id="548" parent="479" name="content_type_id">
++      <DataType>integer|0s</DataType>
++      <Position>6</Position>
++    </column>
++    <column id="549" parent="479" name="user_id">
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>7</Position>
++    </column>
++    <column id="550" parent="479" name="action_flag">
++      <DataType>smallint unsigned|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>8</Position>
++    </column>
++    <foreign-key id="551" parent="479">
++      <ColNames>content_type_id</ColNames>
++      <Deferrable>1</Deferrable>
++      <InitiallyDeferred>1</InitiallyDeferred>
++      <RefColNames>id</RefColNames>
++      <RefTableName>django_content_type</RefTableName>
++    </foreign-key>
++    <foreign-key id="552" parent="479">
++      <ColNames>user_id</ColNames>
++      <Deferrable>1</Deferrable>
++      <InitiallyDeferred>1</InitiallyDeferred>
++      <RefColNames>id</RefColNames>
++      <RefTableName>auth_user</RefTableName>
++    </foreign-key>
++    <index id="553" parent="479" name="django_admin_log_content_type_id_c4bce8eb">
++      <ColNames>content_type_id</ColNames>
++    </index>
++    <index id="554" parent="479" name="django_admin_log_user_id_c564eba6">
++      <ColNames>user_id</ColNames>
++    </index>
++    <key id="555" parent="479">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <column id="556" parent="480" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="557" parent="480" name="app_label">
++      <DataType>varchar(100)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="558" parent="480" name="model">
++      <DataType>varchar(100)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>3</Position>
++    </column>
++    <index id="559" parent="480" name="django_content_type_app_label_model_76bd3d3b_uniq">
++      <ColNames>app_label
++model</ColNames>
++      <Unique>1</Unique>
++    </index>
++    <key id="560" parent="480">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <column id="561" parent="481" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="562" parent="481" name="app">
++      <DataType>varchar(255)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="563" parent="481" name="name">
++      <DataType>varchar(255)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>3</Position>
++    </column>
++    <column id="564" parent="481" name="applied">
++      <DataType>datetime|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>4</Position>
++    </column>
++    <key id="565" parent="481">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <column id="566" parent="482" name="session_key">
++      <DataType>varchar(40)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="567" parent="482" name="session_data">
++      <DataType>text|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="568" parent="482" name="expire_date">
++      <DataType>datetime|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>3</Position>
++    </column>
++    <index id="569" parent="482" name="sqlite_autoindex_django_session_1">
++      <ColNames>session_key</ColNames>
++      <NameSurrogate>1</NameSurrogate>
++      <Unique>1</Unique>
++    </index>
++    <index id="570" parent="482" name="django_session_expire_date_a5c62663">
++      <ColNames>expire_date</ColNames>
++    </index>
++    <key id="571" parent="482">
++      <ColNames>session_key</ColNames>
++      <Primary>1</Primary>
++      <UnderlyingIndexName>sqlite_autoindex_django_session_1</UnderlyingIndexName>
++    </key>
++    <column id="572" parent="483" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="573" parent="483" name="userid">
++      <DataType>varchar(18)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="574" parent="483" name="passwd">
++      <DataType>varchar(18)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>3</Position>
++    </column>
++    <column id="575" parent="483" name="name">
++      <DataType>varchar(7)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>4</Position>
++    </column>
++    <column id="576" parent="483" name="phone">
++      <DataType>varchar(15)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>5</Position>
++    </column>
++    <column id="577" parent="483" name="email">
++      <DataType>text|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>6</Position>
++    </column>
++    <column id="578" parent="483" name="mailing">
++      <DataType>bool|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>7</Position>
++    </column>
++    <column id="579" parent="483" name="addr">
++      <DataType>text|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>8</Position>
++    </column>
++    <column id="580" parent="483" name="regdate">
++      <DataType>datetime|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>9</Position>
++    </column>
++    <column id="581" parent="483" name="zip_id">
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>10</Position>
++    </column>
++    <foreign-key id="582" parent="483">
++      <ColNames>zip_id</ColNames>
++      <Deferrable>1</Deferrable>
++      <InitiallyDeferred>1</InitiallyDeferred>
++      <RefColNames>seq</RefColNames>
++      <RefTableName>zipcode</RefTableName>
++    </foreign-key>
++    <index id="583" parent="483" name="sqlite_autoindex_member_1">
++      <ColNames>userid</ColNames>
++      <NameSurrogate>1</NameSurrogate>
++      <Unique>1</Unique>
++    </index>
++    <index id="584" parent="483" name="member_zip_id_82df1b6d">
++      <ColNames>zip_id</ColNames>
++    </index>
++    <key id="585" parent="483">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <key id="586" parent="483">
++      <ColNames>userid</ColNames>
++      <UnderlyingIndexName>sqlite_autoindex_member_1</UnderlyingIndexName>
++    </key>
++    <column id="587" parent="484" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="588" parent="484" name="qname">
++      <DataType>varchar(16)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="589" parent="484" name="qphone">
++      <DataType>varchar(16)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>3</Position>
++    </column>
++    <column id="590" parent="484" name="qemail">
++      <DataType>varchar(40)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>4</Position>
++    </column>
++    <column id="591" parent="484" name="qselect">
++      <DataType>varchar(20)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>5</Position>
++    </column>
++    <column id="592" parent="484" name="qsubject">
++      <DataType>text|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>6</Position>
++    </column>
++    <column id="593" parent="484" name="context">
++      <DataType>text|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>7</Position>
++    </column>
++    <column id="594" parent="484" name="regdate">
++      <DataType>datetime|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>8</Position>
++    </column>
++    <key id="595" parent="484">
++      <ColNames>id</ColNames>
++      <Primary>1</Primary>
++    </key>
++    <column id="596" parent="485" name="type">
++      <DataType>text|0s</DataType>
++      <Position>1</Position>
++    </column>
++    <column id="597" parent="485" name="name">
++      <DataType>text|0s</DataType>
++      <Position>2</Position>
++    </column>
++    <column id="598" parent="485" name="tbl_name">
++      <DataType>text|0s</DataType>
++      <Position>3</Position>
++    </column>
++    <column id="599" parent="485" name="rootpage">
++      <DataType>int|0s</DataType>
++      <Position>4</Position>
++    </column>
++    <column id="600" parent="485" name="sql">
++      <DataType>text|0s</DataType>
++      <Position>5</Position>
++    </column>
++    <column id="601" parent="486" name="name">
++      <Position>1</Position>
++    </column>
++    <column id="602" parent="486" name="seq">
++      <Position>2</Position>
++    </column>
++    <column id="603" parent="487" name="ZIPCODE">
++      <DataType>varchar(7)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="604" parent="487" name="SIDO">
++      <DataType>varchar(7)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="605" parent="487" name="GUGUN">
++      <DataType>varchar(30)|0s</DataType>
++      <Position>3</Position>
++    </column>
++    <column id="606" parent="487" name="DONG">
++      <DataType>varchar(50)|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>4</Position>
++    </column>
++    <column id="607" parent="487" name="RI">
++      <DataType>varchar(100)|0s</DataType>
++      <Position>5</Position>
++    </column>
++    <column id="608" parent="487" name="BUNGI">
++      <DataType>varchar(40)|0s</DataType>
++      <Position>6</Position>
++    </column>
++    <column id="609" parent="487" name="seq">
++      <DataType>integer|0s</DataType>
++      <NotNull>1</NotNull>
++      <Position>7</Position>
++    </column>
++    <key id="610" parent="487">
++      <ColNames>seq</ColNames>
++      <Primary>1</Primary>
++    </key>
++  </database-model>
++</dataSource>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1657012304745)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1657012304745)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: .idea/shelf/2022-07-06_오후_4_34,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/2022-07-06_오후_4_34,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch b/.idea/shelf/2022-07-06_오후_4_34,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1657092860925)
++++ b/.idea/shelf/2022-07-06_오후_4_34,_업데이트_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch	(date 1657092860925)
+@@ -0,0 +1,29 @@
++Index: .idea/dataSources.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DataSourceManagerImpl\" format=\"xml\" multifile-model=\"true\">\r\n    <data-source source=\"LOCAL\" name=\"db\" uuid=\"b0059ed5-7b79-4007-a96a-6a1f1bba5c08\">\r\n      <driver-ref>sqlite.xerial</driver-ref>\r\n      <synchronize>true</synchronize>\r\n      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>\r\n      <jdbc-url>jdbc:sqlite:C:\\Users\\bigdata.DESKTOP-RIJG1CD\\Documents\\projects\\VIAP_Project_test\\db.sqlite3</jdbc-url>\r\n      <working-dir>$ProjectFileDir$</working-dir>\r\n      <libraries>\r\n        <library>\r\n          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.36.0.3/sqlite-jdbc-3.36.0.3.jar</url>\r\n        </library>\r\n      </libraries>\r\n    </data-source>\r\n    <data-source source=\"LOCAL\" name=\"db\" uuid=\"a63b4271-cded-414a-972f-743303cd0ce4\">\r\n      <driver-ref>sqlite.xerial</driver-ref>\r\n      <synchronize>true</synchronize>\r\n      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>\r\n      <jdbc-url>jdbc:sqlite:E:\\VIAP_Project\\db.sqlite3</jdbc-url>\r\n      <working-dir>$ProjectFileDir$</working-dir>\r\n      <libraries>\r\n        <library>\r\n          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.36.0.3/sqlite-jdbc-3.36.0.3.jar</url>\r\n        </library>\r\n      </libraries>\r\n    </data-source>\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
++--- a/.idea/dataSources.xml	(revision 5da770a9c2c35f708d4f3905edb075389dcc0254)
+++++ b/.idea/dataSources.xml	(date 1657092129012)
++@@ -13,17 +13,5 @@
++         </library>
++       </libraries>
++     </data-source>
++-    <data-source source="LOCAL" name="db" uuid="a63b4271-cded-414a-972f-743303cd0ce4">
++-      <driver-ref>sqlite.xerial</driver-ref>
++-      <synchronize>true</synchronize>
++-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
++-      <jdbc-url>jdbc:sqlite:E:\VIAP_Project\db.sqlite3</jdbc-url>
++-      <working-dir>$ProjectFileDir$</working-dir>
++-      <libraries>
++-        <library>
++-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.36.0.3/sqlite-jdbc-3.36.0.3.jar</url>
++-        </library>
++-      </libraries>
++-    </data-source>
++   </component>
++ </project>
++\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1657092558293)
++++ b/.idea/workspace.xml	(date 1657092558293)
+@@ -0,0 +1,171 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="864b94b4-078f-4491-aad7-93c59ad081b8" name="변경" comment="빠트린거">
++      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
++    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="HTML File" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectId" id="2BVqDLhiAa0o7CsgCNP7Za27g49" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "DefaultHtmlFileTemplate": "HTML File",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "last_opened_file_path": "C:/Users/bigdata.DESKTOP-RIJG1CD/Documents/4.22/zipcode_20130201(2).txt"
++  }
++}]]></component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\bigdata.DESKTOP-RIJG1CD\Documents\projects\VIAP_Project_test\templates\question" />
++      <recent name="C:\Users\bigdata.DESKTOP-RIJG1CD\Documents\projects\VIAP_Project\question" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\bigdata.DESKTOP-RIJG1CD\Documents\projects\VIAP_Project\templates\question" />
++    </key>
++  </component>
++  <component name="RunManager" selected="Django 서버.VIAP_Project_test">
++    <configuration name="car_delivery.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/VIAP_Project/templates/check/car_delivery.html" useBuiltInWebServerPort="true">
++      <method v="2" />
++    </configuration>
++    <configuration name="VIAP_Project_test" type="Python.DjangoServer" factoryName="Django server" singleton="true">
++      <module name="VIAP_Project_test" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++        <env name="DJANGO_SETTINGS_MODULE" value="VIAP_Project.settings" />
++      </envs>
++      <option name="SDK_HOME" value="C:\Users\bigdata.DESKTOP-RIJG1CD\py38\Scripts\python.exe" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="launchJavascriptDebuger" value="false" />
++      <option name="port" value="8000" />
++      <option name="host" value="" />
++      <option name="additionalOptions" value="" />
++      <option name="browserUrl" value="" />
++      <option name="runTestServer" value="false" />
++      <option name="runNoReload" value="false" />
++      <option name="useCustomRunCommand" value="false" />
++      <option name="customRunCommand" value="" />
++      <method v="2" />
++    </configuration>
++    <list>
++      <item itemvalue="Django 서버.VIAP_Project_test" />
++      <item itemvalue="Django 서버.VIAP_Project" />
++      <item itemvalue="JavaScript 디버그.car_delivery.html" />
++    </list>
++    <recent_temporary>
++      <list>
++        <item itemvalue="JavaScript 디버그.car_delivery.html" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="디폴트 작업">
++      <changelist id="864b94b4-078f-4491-aad7-93c59ad081b8" name="변경" comment="" />
++      <created>1657001478256</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1657001478256</updated>
++      <workItem from="1657001480834" duration="257000" />
++      <workItem from="1657001758674" duration="1032000" />
++      <workItem from="1657003071513" duration="8000" />
++      <workItem from="1657003103453" duration="3814000" />
++      <workItem from="1657007287807" duration="4953000" />
++      <workItem from="1657012300488" duration="522000" />
++      <workItem from="1657068037226" duration="14000" />
++      <workItem from="1657078752952" duration="268000" />
++      <workItem from="1657079071978" duration="82000" />
++      <workItem from="1657079333692" duration="31000" />
++      <workItem from="1657079383364" duration="27000" />
++      <workItem from="1657085603378" duration="6813000" />
++    </task>
++    <task id="LOCAL-00001" summary="고객문의.ver1">
++      <created>1657012099863</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1657012099863</updated>
++    </task>
++    <task id="LOCAL-00002" summary="오류수정">
++      <created>1657012589092</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1657012589092</updated>
++    </task>
++    <task id="LOCAL-00003" summary="db 커밋">
++      <created>1657091397580</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1657091397580</updated>
++    </task>
++    <task id="LOCAL-00004" summary="고객문의ok추가">
++      <created>1657091480637</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1657091480637</updated>
++    </task>
++    <task id="LOCAL-00005" summary="빠트린거">
++      <created>1657091643824</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1657091643824</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
++    <servers />
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="고객문의.ver1" />
++    <MESSAGE value="오류수정" />
++    <MESSAGE value="db 커밋" />
++    <MESSAGE value="고객문의ok추가" />
++    <MESSAGE value="빠트린거" />
++    <option name="LAST_COMMIT_MESSAGE" value="빠트린거" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.local.xml b/.idea/dataSources.local.xml
+new file mode 100644
+--- /dev/null	(date 1657092129027)
++++ b/.idea/dataSources.local.xml	(date 1657092129027)
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="dataSourceStorageLocal" created-in="PY-221.5080.212">
++    <data-source name="db" uuid="b0059ed5-7b79-4007-a96a-6a1f1bba5c08">
++      <database-info product="SQLite" version="3.36.0" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.36.0.3" dbms="SQLITE" exact-version="3.36.0" exact-driver-version="3.36">
++        <identifier-quote-string>&quot;</identifier-quote-string>
++      </database-info>
++      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
++      <auth-provider>no-auth</auth-provider>
++      <schema-mapping>
++        <introspection-scope>
++          <node kind="schema" qname="@" />
++        </introspection-scope>
++      </schema-mapping>
++    </data-source>
++  </component>
++</project>
+\ No newline at end of file

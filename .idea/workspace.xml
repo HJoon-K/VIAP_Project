@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b3681d84-7e16-4ab1-8640-4a2ed9082c5a" name="변경" comment="1차 작업" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BYrhk1W8J2cqsx94ovMwK7Uijk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/charles/Documents/Project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\charles\Documents\Project" />
+      <recent name="C:\Users\charles\Documents\Project\VIAP_Project\templates\layout" />
+      <recent name="C:\Users\charles\Documents\Project\VIAP_Project\static\js\viap" />
+      <recent name="C:\Users\charles\Documents\Project\VIAP_Project\templates\check" />
+      <recent name="C:\Users\charles\Documents\Project\VIAP_Project\static\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\charles\Documents\Project\VIAP_Project\temp\navbar" />
+      <recent name="C:\Users\charles\Documents\Project\VIAP_Project\static" />
+      <recent name="C:\Users\charles\Documents\Project\VIAP_Project\static\imgs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="VIAP_Project" type="Python.DjangoServer" factoryName="Django server">
+      <module name="VIAP_Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="VIAP_Project.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\charles\py38\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="9000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="b3681d84-7e16-4ab1-8640-4a2ed9082c5a" name="변경" comment="" />
+      <created>1657093980168</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657093980168</updated>
+      <workItem from="1657093981471" duration="132000" />
+      <workItem from="1657094128183" duration="119000" />
+      <workItem from="1657094263143" duration="135000" />
+      <workItem from="1657094559748" duration="4004000" />
+      <workItem from="1657154502474" duration="12000" />
+      <workItem from="1657172094041" duration="11725000" />
+      <workItem from="1657240991590" duration="14000" />
+      <workItem from="1657258327036" duration="152000" />
+      <workItem from="1657259009245" duration="10269000" />
+      <workItem from="1657499953378" duration="20435000" />
+      <workItem from="1657531283645" duration="4000" />
+      <workItem from="1657586611935" duration="20950000" />
+      <workItem from="1657673282151" duration="18504000" />
+      <workItem from="1657763413918" duration="2638000" />
+      <workItem from="1657766394388" duration="5911000" />
+      <workItem from="1657781387561" duration="56000" />
+      <workItem from="1657781776068" duration="3488000" />
+      <workItem from="1657786626717" duration="277000" />
+      <workItem from="1657786948921" duration="5086000" />
+      <workItem from="1657809356285" duration="13744000" />
+      <workItem from="1657853752324" duration="3908000" />
+      <workItem from="1657857816161" duration="9461000" />
+      <workItem from="1657867970791" duration="293000" />
+      <workItem from="1657868281614" duration="12000" />
+      <workItem from="1657868448530" duration="253000" />
+      <workItem from="1657883278570" duration="3191000" />
+      <workItem from="1657888380972" duration="574000" />
+      <workItem from="1657916760583" duration="3613000" />
+      <workItem from="1657920446391" duration="16398000" />
+      <workItem from="1657946680043" duration="1437000" />
+      <workItem from="1657954752470" duration="3491000" />
+      <workItem from="1657971956171" duration="1995000" />
+      <workItem from="1658008524500" duration="2995000" />
+      <workItem from="1658013498109" duration="15565000" />
+      <workItem from="1658034688246" duration="725000" />
+      <workItem from="1658035422188" duration="113000" />
+      <workItem from="1658035949558" duration="721000" />
+      <workItem from="1658037095029" duration="203000" />
+      <workItem from="1658037302336" duration="1029000" />
+    </task>
+    <task id="LOCAL-00001" summary="1차 작업">
+      <created>1658034775123</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658034775123</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1차 작업" />
+    <option name="LAST_COMMIT_MESSAGE" value="1차 작업" />
+  </component>
+</project>
