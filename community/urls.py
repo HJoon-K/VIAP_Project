@@ -6,12 +6,14 @@ Class-based views
 from django.urls import path
 from . import views
 
+
+
 urlpatterns = [
     path('faq/', views.FaqView.as_view(), name='faq'),
     path('information/', views.InfoView.as_view(), name='information'),
     path('review/', views.ReviewView.as_view(), name='review'),
-
-
+    path('review_write/', views.Review_writeView.as_view(), name='review_write'),
+    path('about_us/', views.AboutUsView.as_view(), name='about_us'),
 
 
 ]

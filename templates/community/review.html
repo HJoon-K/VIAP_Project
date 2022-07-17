@@ -1,15 +1,329 @@
 {% extends 'layout/base.html' %}
 {% load static %}
 {% block content %}
- <div class="text-center ">
+        <section class="bg-half-170 d-table w-100" id="home" >
+            <div class="container mt-5">
+                <div class="row align-items-center" >
+                    <div class="col-lg-7 col-md-7">
+                        <div class="mt-4 m-lg-5">
+                            <div class="alert shadow mb-5">
+                                <span class="badge rounded-pill bg-primary me-1">Notice</span>
+                                <span class="content">고객님이 참여해주신 이용후기를 그대로 보여드립니다</span>
+                            </div>
+                            <h1 class="heading mb-3">서비스 이용후기</h1>
+								<p class="para-desc text-muted d-none d-sm-block">우리의 서비스는 아이디어가 만들어지는 시간부터 제공된 서비스가 완료되기까지 모든 단계에서 <span class="text-primary font-weight-bold">고객만족</span> 을 위해서 설계됩니다. 서비스를 이용한 후 남겨주신 모든 조사 내용은 우리를 더욱 성장하게 만들 것을 알고 있습니다.</p>
+						</div>
+                    </div>
 
-     <img src="/static/imgs/review_main.png">
-     <img src="/static/imgs/review0.png">
-     <img src="/static/imgs/review1.png">
-     <img src="/static/imgs/review2.png">
-     <img src="/static/imgs/review3.png">
-     <img src="/static/imgs/Faq3.png">
-     </div>
+                    <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <img src="{% static 'imgs/hgJJang/services.svg' %}" width="90%" style=" float: right">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog STart -->
+        <section class="section m-5">
+            <div class="container">
+                <div class="row">
+                    <!-- BLog Start -->
+                    <div class="col col-lg-8 col-md-8">
+                        <!-- Comment Areas start -->
+                        <div class="card rounded border mb-3">
+                            <div class="card-body">
+								<span class="widget-title">
+                                    <div class="h4 float-end"><a href="{% url 'review_write' %}" class="text-decoration-none rounded p-1 ps-2" style="border: silver 1px solid;"><b class="text-black">리뷰 작성</b></a></div>
+                                    <p class="">서비스 이용 전반에서의 불만이나 추천/제안이 있다면 자유롭게 작성해주세요</p></span>
+								{% for b in bds %}
+                                <ul class="media-list list-unstyled mb-4 pb-2">
+                                    <li class="mt-4">
+                                        <div class="d-flex client-testi" style="cursor:unset;" >
+                                            <img src="#" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">
+                                            <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                                                <h6 class="text-muted mb-3"><i class="bi bi-person-fill"></i> {{ b.name.name }} 매니저님 대행서비스</h6>
+                                                <ul class="list-unstyled mb-0 ">
+                                                    <li class="list-inline-item bg-secondary bg-opacity-25 rounded text-black mb-2"><span class="fw-light"> 고객센터 </span></li>
+                                                    {%  if b.supjum == 1 %}
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-danger"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    {% elif b.supjum == 2 %}
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-danger"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-danger"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    {% elif b.supjum == 3 %}
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    {% elif b.supjum == 4 %}
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    {% elif b.supjum == 5 %}
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    {% endif %}
+                                                </ul>
+
+                                                <ul class="list-unstyled mb-0 ">
+                                                    <li class="list-inline-item bg-secondary bg-opacity-25 rounded text-black"><span class="fw-light">현장업무</span></li>
+                                                    {%  if b.workjum == 1 %}
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-danger"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    {% elif b.workjum == 2%}
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-danger"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-danger"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    {% elif b.workjum == 3 %}
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    {% elif b.workjum == 4 %}
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+                                                    {% elif b.workjum == 5 %}
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+                                                    {% endif %}
+                                                </ul>
+
+
+                                                <div class="mt-3"><p class="text-muted alert p-3 bg-light rounded">{{ b.contents }}</p>
+
+                                                    <ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">
+                                                        <li class="text-muted small">
+                                                            <i class="bi bi-calendar-check"></i> {{ b.regdate}}
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                {% endfor %}
+							</div>
+                        </div>
+
+							<!-- PAGINATION START -->
+						<div class="row" style="margin-left: 25%">
+                            <div class="text-center px-auto">
+                                <!-- STR : 페이징 -->
+                                <ul class="pagination mb-0">
+                                {% if request.GET.rpage|add:0 > 1 %}
+                                    <li class="page-item">
+                                        <a href="?rpage=1&{{ qry }}" class="page-link pr-2 pl-3 pt-2 pb-2">처음</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="?rpage={{ request.GET.rpage|add:-1 }}&{{ qry }}" class="page-link pr-3 pl-3 pt-2 pb-2">&lt;</a>
+                                    </li>
+                                {% endif %}
+                                    {% for i in range %}
+                                        {% if i <= pages %}
+                                        <li class="page-item {% if i == request.GET.rpage|add:0 %}active {% endif %}">
+                                            <a href="?rpage={{ i }}&{{ qry }}" class="page-link pr-3 pl-3 pt-2 pb-2">{{ i }}</a>
+                                        </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% if request.GET.rpage|add:0 < pages %}
+                                    <li class="page-item">
+                                        <a href="?rpage={{ request.GET.rpage|add:1 }}&{{ qry }}" class="page-link pr-3 pl-3 pt-2 pb-2" >&gt;</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="?rpage={{ pages }}&{{ qry }}" class="page-link pr-3 pl-2 pt-2 pb-2">맨끝</a>
+                                    </li>
+                                {% endif %}
+                                </ul>
+                                <!-- END : 페이징 -->
+                            </div>
+						</div>
+                    </div>
+                    <!-- BLog End -->
+                    <!-- START SIDEBAR -->
+                    <div class="col col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 order-1 order-md-1">
+                        <div class="p-4 rounded shadow">
+							<div class="widget mb-4 pb-2">
+									<span class="h5 mb-4 fw-bold">고객 만족도</span>
+								<div class="d-flex mt-4 justify-content-between">
+									<ul class="list-unstyled text-end mb-0 ">
+										<li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+									</ul>
+									<span> 매우만족</span>
+								</div>
+								<div class="d-flex justify-content-between">
+									<ul class="list-unstyled text-end mb-0 ">
+										<li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-success"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+									</ul>
+									<span> 만족</span>
+								</div>
+								<div class="d-flex justify-content-between">
+									<ul class="list-unstyled text-end mb-0 ">
+										<li class="list-inline-item"><i class="bi bi-star-fill text-warning"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-warning"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-warning"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+									</ul>
+									<span> 보통</span>
+								</div>
+								<div class="d-flex justify-content-between">
+									<ul class="list-unstyled text-end mb-0 ">
+										<li class="list-inline-item"><i class="bi bi-star-fill text-danger"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-danger"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+									</ul>
+									<span> 불만</span>
+								</div>
+								<div class="d-flex justify-content-between">
+									<ul class="list-unstyled text-end mb-0 ">
+										<li class="list-inline-item"><i class="bi bi-star-fill text-danger"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+										<li class="list-inline-item"><i class="bi bi-star-fill text-light"></i></li>
+									</ul>
+									<span> 매우불만</span>
+								</div>
+							</div>
+							<!-- CATAGORIES -->
+                            <div class="widget mb-4 pb-2">
+                                    <span class="h5 mb-2 fw-bold">고객센터 만족도</span>
+                                    <ul class="list-unstyled mt-4 mb-0">
+                                        <li class="mb-2">
+                                            <div class="progress-box">
+                                                <h6 class="title text-muted"><a href="#">매우만족</a><span class="float-right"> {{ workjump5 }}% ({{ workjum5 }})</span></h6>
+                                                    <div class="progress">
+                                                        <div class="progress-bar position-relative " style="width:{{ workjump5 }}%;">
+                                                        </div>
+                                                    </div>
+                                            </div><!--end process box-->
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="progress-box">
+                                                <h6 class="title text-muted"><a href="#">만족</a><span class="float-right">  {{ workjump4 }}% ({{ workjum4 }})</span></h6>
+                                                    <div class="progress">
+                                                        <div class="progress-bar position-relative" style="width:{{ workjump4 }}%;">
+                                                        </div>
+                                                    </div>
+                                            </div><!--end process box-->
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="progress-box">
+                                                <h6 class="title text-muted"><a href="#">보통</a><span class="float-right">  {{ workjump3 }}% ({{ workjum3 }})</span></h6>
+                                                   <div class="progress">
+                                                       <div class="progress-bar position-relative" style="width:{{ workjump3 }}%;">
+                                                       </div>
+                                                   </div>
+                                            </div><!--end process box-->
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="progress-box">
+                                                <h6 class="title text-muted"><a href="#">불만</a><span class="float-right">  {{ workjump2 }}% ({{ workjum2 }})</span></h6>
+                                                     <div class="progress">
+                                                        <div class="progress-bar position-relative" style="width:{{ workjump2 }}%;">
+                                                        </div>
+                                                     </div>
+                                            </div><!--end process box-->
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="progress-box">
+                                                <h6 class="title text-muted"><a href="#">매우불만족</a><span class="float-right"> {{ workjump1 }}% ({{ workjum1 }})</span></h6>
+                                                     <div class="progress">
+                                                         <div class="progress-bar position-relative" style="width:{{ workjump1 }}%;">
+                                                         </div>
+                                                     </div>
+                                            </div>
+                                        </li><!--end process box-->
+                                    </ul>
+                            </div><!-- CATAGORIES --><!-- CATAGORIES -->
+
+                            <div class="widget mb-4 pb-2">
+                                <span class="h5 mb-2 fw-bold">현장서비스 만족도</span>
+                            <ul class="list-unstyled mt-4 mb-0 blog-catagories">
+                                <li class="mb-2">
+                                    <div class="progress-box">
+                                        <h6 class="title text-muted"><a href="#">매우만족</a><span class="float-right"> {{ supjump5 }}% ({{ supjum5 }})</span></h6>
+                                             <div class="progress">
+                                                 <div class="progress-bar position-relative" style="width:{{ supjump5 }}%;">
+                                                 </div>
+                                             </div>
+                                    </div><!--end process box-->
+                                </li>
+                                <li class="mb-2">
+                                    <div class="progress-box"><h6 class="title text-muted">	<a href="#">만족</a><span class="float-right"> {{ supjump4 }}% ({{ supjum4 }})</span></h6>
+                                         <div class="progress">
+                                            <div class="progress-bar position-relative" style="width:{{ supjump4 }}%;">
+                                            </div>
+                                         </div>
+                                    </div><!--end process box-->
+                                </li>
+                                <li class="mb-2">
+                                    <div class="progress-box">
+                                        <h6 class="title text-muted"><a href="#">보통</a><span class="float-right"> {{ supjump3 }}% ({{ supjum3 }})</span></h6>
+                                           <div class="progress">
+                                               <div class="progress-bar position-relative" style="width:{{ supjump3 }}%;">
+                                               </div>
+                                           </div>
+                                    </div><!--end process box-->
+                                </li>
+                                <li class="mb-2">
+                                    <div class="progress-box">
+                                        <h6 class="title text-muted"><a href="#">불만</a><span class="float-right"> {{ supjump2 }}% ({{ supjum2 }})</span></h6>
+                                            <div class="progress">
+                                                <div class="progress-bar position-relative" style="width:{{ supjump2 }}%;">
+                                                </div>
+                                            </div>
+                                    </div><!--end process box-->
+                                </li>
+                                <li class="mb-2">
+                                    <div class="progress-box">
+                                        <h6 class="title text-muted"><a href="#">매우불만족</a><span class="float-right"> {{ supjump1 }}% ({{ supjum1 }})</span></h6>
+                                            <div class="progress">
+                                                <div class="progress-bar position-relative" style="width:{{ supjump1 }}%;">
+                                                </div>
+                                            </div>
+                                    </div><!--end process box-->
+                                </li>
+                            </ul>
+                            </div>	<!-- CATAGORIES -->
+                    </div><!--end col-->
+                   </div><!--end row-->
+                 </div><!--end container-->
+            </div>
+        </section><!--end section-->
+        <!-- Blog End -->
 
 {% endblock %}
 

@@ -8,7 +8,6 @@ from . import views
 
 urlpatterns = [
     path('agree/', views.AgreeView.as_view(), name='agree'),
-    path('checkme/', views.CheckmeView.as_view(), name='checkme'),
     path('joinme/', views.JoinmeView.as_view(), name='joinme'),
     path('joinok/', views.JoinokView.as_view(), name='joinok'),
     path('zipcode/', views.ZipcodeView.as_view(), name='zipcode'),

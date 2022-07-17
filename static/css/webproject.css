@@ -1,0 +1,72 @@
+
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+/* index.html */
+.outer {
+  overflow-x: hidden;
+    text-align: center;
+}
+
+.inner-list {
+  display: flex;
+  transition: .3s ease-out; /* transition-duration은 변화가 몇초, 또는 몇 밀리세컨드(1/1000초)에 걸쳐 일어날지를 설정, ease-out은 종료지점의 변화가 천천히 진행된다.*/
+  height: 100%;
+}
+
+
+.btn_hvL, .btn_hvR{
+    position: absolute; background-color:transparent;
+    transform:translate(-50%, -50%);
+    top:50%; width: 20%;
+    opacity:0;
+    border:none;
+
+}
+
+.btn_carchk, .btn_carcen{
+    position: absolute;
+    transform:translate(-50%, -50%);
+}
+
+.btn_hvL:hover,.btn_hvR:hover{
+    opacity:1;
+}
+.con {z-index: 100; transition: transform 500ms; margin-top: 70px }
+.con:hover { transform:translateY(-50px); transition: transform 500ms; z-index: 200; }
+
+ 
+.navbar_toogleBtn {
+    display: none ;
+    right: 32px;
+    font-size: 24px;
+    color: #d49466;;
+}
+
+.nav-item:hover {
+    color:  #d49466;
+}
+
+/* about-us */
+.con:hover #p_img{ filter:blur(10px)}
+.con .hidden_t{display: none;}
+.con:hover #hidden_t{display: block;}
+.hidden_t {position: absolute; text-align:center; top:50%; left: 50%; transform:translate(-50%, -50%)}
+li{list-style:none;}
+
+@media screen and (max-width: 992px) {
+    .nav {
+        display: none;
+        justify-content: center !important;
+    }
+    .navbar_menu {
+        flex-direction: column !important;
+    }
+    .navbar_toogleBtn {
+        display: block;
+    }
+    .nav.active, .navbar_menu.active {
+        display: flex;
+    }
+
+} 

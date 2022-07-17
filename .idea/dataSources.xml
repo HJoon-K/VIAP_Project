@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="b0059ed5-7b79-4007-a96a-6a1f1bba5c08">
+    <data-source source="LOCAL" name="db [2]" uuid="ad545e8c-071a-4f04-8cbc-21b50955e23c">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\bigdata.DESKTOP-RIJG1CD\Documents\projects\VIAP_Project_test\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\bigdata\Desktop\새거\4조 (2)\VIAP_Project\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
@@ -13,11 +13,11 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="db" uuid="a63b4271-cded-414a-972f-743303cd0ce4">
+    <data-source source="LOCAL" name="db" uuid="4e97626f-ca57-4c22-9566-617bcacdcc34">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:E:\VIAP_Project\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\charles\Documents\Project\VIAP_Project\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>

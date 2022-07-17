@@ -1,39 +1,79 @@
+{% load static %}
+<header class="position-sticky top-0  "style="z-index:1000">
+    <div  class="row d-flex justify-content-between  bg-light m-0 ">
+        <div class="col-3 ps-0" >
+            <h1><a href="{% url 'index' %}"><img src={% static "imgs/logo.png" %}></a></h1>
+        </div>
+        <div class="col-8 d-flex justify-content-end">
+            <h1 class="">
+                {% if not request.session.userinfo %}
+                <div class="d-flex fs-5 mt-4 ">
+                    <p><a class=" fw-light text-dark fw-bold" style=" text-decoration-line: none"  data-bs-toggle="modal" data-bs-target="#loginmodal" href="#">로그인</a></p>
+                    <p class="">&nbsp;&nbsp; / &nbsp;&nbsp;</p>
+                    <p><a class=" fw-light text-dark fw-bold" style=" text-decoration-line: none" href="{% url 'agree' %}"> 회원가입&nbsp;</a></p>
+                </div>
+                {% endif %}
 
+                {% if request.session.userinfo %}
+                 <div class="d-flex fs-5 mt-4 ">
+                    <p><a class=" fw-light text-dark fw-bold" style=" text-decoration-line: none"id="logoutbtn" href="#"> 로그아웃 </a></p>
+                      <p class="">&nbsp;&nbsp; / &nbsp;&nbsp;</p>
+                    <p><a class=" fw-light text-dark fw-bold" style=" text-decoration-line: none" href="{% url 'question' %}"> 고객문의 </a></p>
+                     <p class="">&nbsp;&nbsp; / &nbsp;&nbsp;</p>
+                     <p><a class=" fw-light text-dark fw-bold" style=" text-decoration-line: none" href="{% url 'mypage' %}"> 내 정보 </a></p>
+                </div>
+                {% endif %}
+            </h1>
+            <a href="#" class="navbar_toogleBtn ms-3"><i class="fa-solid fa-bars fs-5 mt-4 "></i></a>
+        </div>
+    </div>
 
+    <nav class="nav navbar-expand bg-success text-white justify-content-end fw-bold">
+        <ul class="navbar-nav nav-fill w-50 fs-5 navbar_menu" >
+            <li class="nav-item " >
+                <a class="nav-link  fs-5"href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="{% url 'about_us' %}">회사소개</a></li>
 
+            <li class="nav-item dropdown" id="nav_item">
+              <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                자동차 검사
+              </a>
+              <ul class="dropdown-menu text-center bg-success opacity-75 fs-6"  aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item text-white fw-bold" href="{% url 'car_pickup' %}">픽업및 예약</a></li>
+                <li><a class="dropdown-item text-white fw-bold" href="{% url 'car_info' %}">검사소 찾기</a></li>
+                <li><a class="dropdown-item text-white fw-bold" href="{% url 'car_confirm' %}">예약확인및 취소</a></li>
+              </ul>
+            </li>
 
-<nav class="nav navbar-expand bg-success text-white justify-content-end fw-bold">
-    <ul class="navbar-nav nav-fill w-50 fs-5 " >
-        <li class="nav-item dropdown" >
-            <a class="nav-link dropmenu fs-5"href="{% url 'intro' %}">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link fs-5" href="#">회사소개</a></li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            자동차 검사
-          </a>
-          <ul class="dropdown-menu text-center bg-success fs-6" style="width: 100% " aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item text-white fw-bold" href="{% url 'car_check' %}">픽업</a></li>
-            <li><a class="dropdown-item text-white fw-bold" href="{% url 'car_delivery' %}">검사소 찾기</a></li>
-            <li><a class="dropdown-item text-white fw-bold" href="{% url 'car_confirm' %}">예약 확인 및 취소</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDarkDropdownMenuLink"  data-bs-toggle="dropdown" aria-expanded="false">
-            커뮤니티
-          </a>
-          <ul class="dropdown-menu text-center  bg-success opacity-75 fs-6" style="width: 100%; "  aria-labelledby="navbarDropdownMenuLink" >
-            <li><a class="dropdown-item text-white opacity-100 fw-bold " href="{% url 'information' %}">information</a></li>
-              <li><a class="dropdown-item text-white  opacity-100  fw-bold" href="{% url 'faq' %}">FAQ</a></li>
-            <li><a class="dropdown-item text-white  opacity-100  fw-bold" href="{% url 'review' %}">이용후기</a></li>
-          </ul>
-
-
-        {#나중에 관리자 계정만 접속이 가능하게 할 예정입니다. #}
-        <li class="nav-item">
-            <a class="nav-link fs-5" href="{% url 'admin' %}">관리자</a></li>
-    </ul>
-</nav>
+            <li class="nav-item dropdown" id="nav_item2" >
+              <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDarkDropdownMenuLink"  data-bs-toggle="dropdown" aria-expanded="false">
+                커뮤니티
+              </a>
+              <ul class="dropdown-menu text-center  bg-success opacity-75 fs-6" style="width: 100%; "  aria-labelledby="navbarDropdownMenuLink"  >
+                <li><a  class="dropdown-item text-white fw-bold " href="{% url 'information' %}">information</a></li>
+                <li><a class="dropdown-item text-white  fw-bold" href="{% url 'faq' %}">FAQ</a></li>
+                <li><a class="dropdown-item text-white   fw-bold" href="{% url 'review' %}?rpage=1&">이용후기</a></li>
+              </ul>
+            </li>
+            {% if request.session.userinfo == 'abc123|1'%}
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="{% url 'admin' %}">관리자</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header><!--header-->
+<script>
+    //Menu
+// Toggle menu
+function toggleMenu() {
+    document.getElementById('isToggle').classList.toggle('open');
+    var isOpen = document.getElementById('navigation')
+    if (isOpen.style.display === "block") {
+        isOpen.style.display = "none";
+    } else {
+        isOpen.style.display = "block";
+    }
+};
+</script>

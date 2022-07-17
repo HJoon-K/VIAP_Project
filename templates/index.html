@@ -1,67 +1,451 @@
 {% extends 'layout/base.html' %}
 {% load static %}
 {% block title %}프로젝트 소개{% endblock %}
-{% block style %}
-    <style>
-      #carousel02 { position: relative;
-           height: 299px; overflow: hidden ; margin-top:50px; margin-bottom: 50px; }
-        /* 캐러셀 전체 영역 지정 */
 
-        #carousel02 ul { display: flex ;
-        flex-direction: row-reverse}
-        /*  */
-    </style>
-
-{% endblock %}
 {% block content %}
         <div id="main">
             <div class="text-center ">
-                <div id="carousel02" class="w-100">
-                    <ul>
-                        {#슬라이드 베너  #}
-                        <li><a href="{% url 'agree' %}"><img src={% static "imgs/slide1.png "%}></a></li>
-                        <li><img src={% static "imgs/slide2.png" %}></li>
-                        <li><img src={% static "imgs/slide3.png" %}></li>
-                    </ul>
+
+                <div class=" outer w-100 h-auto"style="position: relative">
+                  <div class="inner-list">
+                    <div class="inner">
+                     <a href="{% url 'agree' %}"><img style=" max-width: 1300px" src={% static "imgs/advertisement/advertisement1.jpg "%}></a>
+                    </div>
+                    <div class="inner">
+                     <a href="{% url 'agree' %}"><img style=" max-width: 1300px" src={% static "imgs/advertisement/advertisement2.jpg "%}></a>
+                    </div>
+                    <div class="inner">
+                     <a href="{% url 'agree' %}"><img style=" max-width: 1300px" src={% static "imgs/advertisement/advertisement3.jpg "%}></a>
+                    </div>
+                    <div class="inner">
+                     <a href="{% url 'agree' %}"><img  style="max-width: 1300px" src={% static "imgs/advertisement/advertisement4.jpg "%}></a>
+                    </div>
+                    <div class="inner">
+                     <a href="{% url 'agree' %}"><img style="max-width: 1300px" src={% static "imgs/advertisement/advertisement5.jpg "%}></a>
+                    </div>
+                     <div class="inner1">
+                     <a href="{% url 'agree' %}"><img style="max-width: 1300px" src={% static "imgs/advertisement/advertisement1.jpg "%}></a>
+                    </div>
+                  </div>
+                    <div >
+                      <button class="btn_hvL button-left h-100"style="   left: 10%; "><h1><i class="bi bi-caret-left-fill "></i></h1></button>
+                      <button class="btn_hvR button-right h-100 "style="  left: 90%; "><h1><i class="bi bi-caret-right-fill  "></i></h1></button>
+                    </div>
                 </div>
-                <div>
-                    <div class="fs-1 text-primary fw-bold fst-italic mt-2">가장 쉬운 자동차 검사 예약 웹페이지 </div>
-                    <div class="text-black-50 fw-bold fs-5 mt-5">아이디와 비밀번호를 다시 한번 확인하셔서 로그인 해주세요</div>
-                </div><!--//message-->
-                <form style="background: silver; margin: 0 20%" class="mt-5 p-4">
-                    <div style="padding: 2% 0">
-                        <button type="button" class="btn btn-success" id="nochk"><i class="bi bi-x"></i> 내 자동차검사 대행비용은?</button>
-                        <button type="button" class="btn btn-primary ms-5" id="okchk"><i class="bi bi-check"></i> 자동차검사소 방문예약</button>
-                    </div><!--//buttons-->
-                </form>
-                <p class="w-100"><img src={% static "imgs/home_city.PNG" %}></p>
-                <p class="w-100"><img src={% static "imgs/sido_gugun_select.PNG" %}></p>
-                <p class="w-100"><img src={% static "imgs/home_hugi.png" %}></p>
+
+
+
+                <div style="margin-top: 10%;" >
+                    <form id="frm" style="background:rgb(0,100,0,0.05) ; margin: 0 5%;" class="mt-5 p-4 rounded-5 shadow">
+                        <div >
+                            <h2 class=" text-black fw-bold">가장 쉬운 자동차 검사 예약 웹페이지 </h2>
+                            <div class="text-black-50 fs-5 mt-3"><p>전국 대부분의 지역 에서 자동차검사와 정비 딜리버리를 서비스로 제공하고 있습니다.</br>온라인 예약은  <strong>할인 </strong>이 제공되며, <strong>취소</strong>를 하시면 모든 결제비용은 자동으로 환불됩니다.</p></div>
+                        </div><!--//message-->
+
+                        <div style="background:rgb(0,0,0,0.04) ; margin: 0 10%; position: relative" class="mt-5 mb-4 p-5 rounded-5 shadow">
+                            <div style="padding: 2% 0">
+                                <a href="{% url 'car_pickup' %} "><button type="button" class="btn btn-success p-4 btn_carchk " style="left: 30% ; width:  30%;display: inline-block;    white-space:nowrap; ;text-overflow : ellipsis; ">자동차 픽업 서비스 예약</button></a>
+                               <a href="{% url 'car_info' %} "> <button type="button" class="btn btn-primary p-4 btn_carcen  " style="left: 70%; width:  30%; display: inline-block;    white-space:nowrap; ;text-overflow : ellipsis;">주변 자동차검사소  찾기</button></a>
+                            </div><!--//buttons-->
+                       </div>
+                    </form>
+                </div>
+
+
+
+                  <div style="margin-top: 10%;" >
+                      <form id="frm1" style="background:rgb(0,0,100,0.05) ; margin: 0 10% " class="mt-5 p-4 rounded-5 shadow-lg">
+
+                          <h2 class="mt-2 mb-5 text-black fw-bold"> 가장 쉬운 자동차 검사 예약 웹페이지 </h2>
+                          <div class="container outer-div" >
+                              <div class="inner-div" style="margin: auto" >
+                                    <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mb-5 " >
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary  shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/seoul_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>서 울</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">전 지 역</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/gyeonggi_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>경기도</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">전 지 역</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/incheon_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>인 천</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">전 지 역</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/busan_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>부 산</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">대 부 분</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/daejeon.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>대 전</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/gwangju_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>광 주</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/daegu_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>대 구</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/ulsan_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>울 산</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/chungcheongnamdo_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>충청남도</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/chungcheongbukdo_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>충청북도</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/gyeongnam_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>경상남도</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/gyeongbuk_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>경상북도</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/jeollabukdo_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>전라북도</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/jeollanamdo_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>전라남도</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                       </div>
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/gangwon_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>강원도</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col con " >
+                                            <div class="card border-secondary shadow rounded-5"style="position: relative">
+                                                <img src="{% static '/imgs/do_logo/jeju_logo.png' %}" class="imgy  rounded-5 card-img card-img-top " alt="naver_blog">
+                                                <hr>
+                                                <div class="card-body fw-bold p-4">
+                                                    <h3>제주도</h3>
+                                                  <p class="card-text text-end" style="margin: 10px 0px">추가 준비중</p>
+                                              </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+                    </div><!--end col-->
+                </div>
+            </div>
+
+                      </form>
+                  </div>
+
+                  <div style="margin-top: 10%;" >
+                      <form id="i_frm" name="i_frm" style="background:rgb(0,0,0,0.05) ; " onsubmit="categoryChange1(this)"  method="post" class="mt-5 p-4 rounded-5 shadow-lg">
+                          {% csrf_token %}
+                          <div>
+                              <h2 class=" text-black fw-bold mt-5">내 자동차검사 대행비용은 ?</h2>
+                              <p class="fs-5 mt-4">자동차검사 대행을 의뢰할 지역을 선택하시면,<br> 서비스가 가능한 지역과 <strong>부가세 10%</strong>가 포함된 검사대행비용을 확인할 수 있습니다!</p>
+                          </div>
+
+                          <div class="col-lg-12">
+                                <div class="row text-left">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <select  id="selectbox1" name="selectbox1" class="form-control form-select" onchange="categoryChange1(this)">
+                                                <option selected="">시·도</option>
+                                                {% for i in sido_d %}
+                                                    <option value="{{ i }}">{{ i }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <select id="locGugun" name="locGugun" class="form-control form-select">
+                                                <option selected="">시·군·구</option>
+                                            </select>
+                                        </div>
+                                    </div><!--end col-->
+                                </div>
+                            </div><!--end col-->
+                                <div class="mt-5">
+                                    <input type="text" name="i_sido" id="i_sido" class="form-control" maxlength="20"value=''>
+                                </div>
+
+
+                      </form>
+
+
+                  </div>
 
             </div>   <!-- // complete-->
         </div><!--main-->
+
+
+
 {% endblock %}
 {% block script %}
+    <script>
+           /*
+          div사이즈 동적으로 구하기
+        */
+        const outer = document.querySelector('.outer');
+        const innerList = document.querySelector('.inner-list');
+        const inners = document.querySelectorAll('.inner');
+        let currentIndex = 0; // 현재 슬라이드 화면 인덱스
+
+        inners.forEach((inner) => {
+          inner.style.width = `${outer.clientWidth}px`; // inner의 width를 모두 outer의 width로 만들기
+        })
+
+        innerList.style.width = `${outer.clientWidth * inners.length}px`; // innerList의 width를 inner의 width * inner의 개수로 만들기
+
+        /*
+          버튼에 이벤트 등록하기
+        */
+        const buttonLeft = document.querySelector('.button-left');
+        const buttonRight = document.querySelector('.button-right');
+
+        buttonLeft.addEventListener('click', () => {
+            console.log(currentIndex)
+          currentIndex--;
+          currentIndex = currentIndex < 0 ? 0 : currentIndex; // index값이 0보다 작아질 경우 0으로 변경
+          innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
+          clearInterval(interval); // 기존 동작되던 interval 제거
+          interval = getInterval(); // 새로운 interval 등록
+        });
+
+        buttonRight.addEventListener('click', () => {
+          currentIndex++;
+          currentIndex = currentIndex >= inners.length ? inners.length - 1 : currentIndex; // index값이 inner의 총 개수보다 많아질 경우 마지막 인덱스값으로 변경
+          innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
+          clearInterval(interval); // 기존 동작되던 interval 제거
+          interval = getInterval(); // 새로운 interval 등록
+        });
+        let i=1
+        /*
+          주기적으로 화면 넘기기
+        */
+        const getInterval = () => {
+          return setInterval(() => {
+                {#console.log('inners.length-1 = '+(inners.length-1))#}
+                {#console.log('input i = '+ i)#}
+              if(i<=inners.length-1){
+
+                    {#console.log('i='+i)#}
+                    i++;
+                    {#console.log('i++='+i)#}
+                    currentIndex++;
+                    {#console.log('currentIndex++='+currentIndex)#}
+
+                    i= currentIndex >= inners.length-1 ? currentIndex+1: i
+                  {# 사용자가  버튼을 눌러 페이지와 i 값의 차가 발생하여  마지막 번째 장(ex 5번째 장 즉 index=4번 움직임)이 나오면 i값을 index+1(ex 5)을 하여 넘김 #}
+                  {#console.log(i+'이게 중요하니까 이거봐')#}
+                    innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
+
+              }else if(i>inners.length-1){
+                    currentIndex--;
+                    {#console.log('i='+i)#}
+                    i++;
+                    {#console.log('i++='+i)#}
+
+                    {#console.log('-currentIndex--='+currentIndex)#}
+                    i = currentIndex < 1 ? 1 : i  {#(true : false;)#}
+                    currentIndex = currentIndex < 0 ? 0 : currentIndex  // index값이 0보다 작아질 경우 0으로 변경
+
+                    {#console.log(i)#}
+                    innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
+
+              }
+               {#console.log('------------------------------------------------------------------------------')#}
+              },2000);
+        }
+
+        let interval = getInterval(); // interval 등록
+    </script>{#  슬라이더  #}
+
+{#    <script>#}
+{##}
+{#        const frm = document.querySelector('#i_frm');#}
+{#        function categoryChange1(e){#}
+{#            var langSelect = document.getElementById("selectbox1");#}
+{#            // select element에서 선택된 option의 value가 저장된다.#}
+{#            var selectValue = langSelect.options[langSelect.selectedIndex].value;#}
+{#            gugun=[]#}
+{##}
+{#            {% for is1 in sido_d %}#}
+{#                gugun.push(is1)#}
+{#            {% endfor %}#}
+{#            console.log( gugun );#}
+{#            console.log( {{ sido_d.values }} );#}
+{##}
+{#            var target = document.getElementById("locGugun");#}
+{#            target.options.length = 0;#}
+{#            for (x in gugun) {#}
+{#                var opt = document.createElement("option");#}
+{#                opt.value = gugun[x];#}
+{#                opt.innerHTML = gugun[x];#}
+{#            target.appendChild(opt);#}
+{#            var target1 = document.getElementById("i_sido");#}
+{#            target1.value=e.value;#}
+{##}
+{##}
+{#         }  }#}
+{##}
+{##}
+{#    </script>#}
+
      <script>
-                let ul = document.querySelector('#carousel02 ul');
 
-                //슬라이드 이미지들을 한줄로 이어붙이기 위해 너비 재조정
-                let moveleftAnimate = ul.animate([
-                    {transform: 'translateX(0px)', offset: 0.5},
-                    {transform: 'translateX(1200px)'}],
-                    {duration: 5000});
-                //5초동안 슬라이드 전환:4.25동안 0px 이동(이미지 고정)
-                //                      0,75초 동안 1200px이동 (이미지 이동)
+        const frm = document.querySelector('#i_frm');
+        const i_sido = document.querySelector('#i_sido');
 
-                moveleftAnimate.onfinish = () => {
-                    let removeItem = ul.removeChild(ul.firstElementChild);
-                    ul.appendChild(removeItem);
-                    moveleftAnimate.play();
-                };
-                //슬라이드 애니메이션이 끝나면
-                //맨앞으로 이동된 슬라이드는 다시 맨뒤로 보내고
-                //애니매이션을 다시 재생함
+        function categoryChange1(e){
 
-     </script>
+            i_sido.value=e.value;
+
+            let qry='?sido='+i_sido.value;
+            fetch('{%  url 'sigungu' %}' + qry)
+                .then(response=>response.text())
+                .then(text=> setZipcode(text));
+        };
+
+
+        const setZipcode =(sidos)=>{
+            {#var langSelect = document.getElementById("selectbox1");#}
+            // select element에서 선택된 option의 value가 저장된다.
+            {#var selectValue = langSelect.options[langSelect.selectedIndex].value;#}
+            sidos =JSON.parse(sidos); //문자열을 json 객체로 변환
+            console.log( sidos );
+            console.log( sidos['sigungu'] );
+
+
+            a123 = sidos['sigungu'];
+
+            var target = document.getElementById("locGugun");
+
+            target.options.length = 0;
+            for (x in a123) {
+                var opt = document.createElement("option");
+                opt.value = a123[x];
+                opt.innerHTML = a123[x];
+                target.appendChild(opt);
+                //console.log(opts);
+                //결합된 option 태그들을
+                //select태그사이에 삽입함
+            }
+         }
+    </script>
+
+
+
 {% endblock %}
 

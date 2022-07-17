@@ -7,7 +7,7 @@
             <h5 class="modal-title">로그인</h5>
             <button type="button" class="btn btn-light"
                     data-bs-dismiss="modal" >닫기</button>
-<!--                      aria-label="Close"//시각장애인한테 글자 읽어줄수 있게 만들어주는 기능-->
+
           </div>
 
           <div class="modal-body">
@@ -22,7 +22,7 @@
                      <div class="row mb-3">
                         <label for="passwd" class="col-form-label col-3 text-end text-danger">비밀번호</label>
                         <div class="col-8">
-                        <input type="text" name="passwd" id="mpasswd" class="form-control border-danger">
+                        <input type="password" name="passwd" id="mpasswd" class="form-control border-danger">
                     </div><!--passwd-->
                     </div>
                     <div class="row">
@@ -38,12 +38,58 @@
           </div>
           <div class="modal-footer justify-content-center">
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="loginbtn">로그인</button>
-            <button type="button" class="btn btn-warning text-white">아이디/비밀번호 찾기</button>
 
+                   <!-- ------------------------------Kakao login------------------------ -->
+                    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+              <a href="javascript:kakaoLogin();">
+                     <button type="button" class="btn btn-dark text-warning" id="loginbtn">카카오로 로그인</button>
+              </a>
+
+    <script>
+        window.Kakao.init("7057214d6d9a0f47d43310b75ca200f3");
+        function kakaoLogin(){
+            window.Kakao.Auth.login({
+                scope:'profile_nickname, account_email',
+                success: function (authObj){
+                    console.log(authObj)
+                    window.Kakao.API.request({
+                        url:'/v2/user/me',
+                        success: res => {
+                            const kakao_account = res.kakao_account;
+                            console.log(kakao_account);
+                        }
+                    })
+                }
+            })
+        }
+    </script>
+              <!-- ------------------------------Kakao login end------------------------ -->
+
+
+            <button type="button" class="btn btn-warning text-white">아이디/비밀번호 찾기</button>
           </div>
+
+<!-- -------------------------------------kakao log out--------------------------------------------
+
           <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-dark" data-bs-dismiss="modal" id="loginbtn">구글로 로그인</button>
+    <button class="btn btn-dark" onclick="kakaoLogout()">로그아웃</button>
+<script type="text/javascript">
+  function kakaoLogout() {
+    if (!Kakao.Auth.getAccessToken()) {
+      alert('로그인 상태가 아님')
+      return
+    }
+    else
+        Kakao.Auth.logout(function() {
+      alert('logout ok\naccess token -> ' + Kakao.Auth.getAccessToken())
+    })
+
+  }
+</script>
           </div>
+-------------------------------------kakao log out end-------------------------------------------- -->
+
+
         </div>
       </div>
     </div>

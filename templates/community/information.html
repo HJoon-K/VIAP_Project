@@ -1,11 +1,68 @@
 {% extends 'layout/base.html' %}
 {% load static %}
+{% load split %}
+
+{%  block style%}
+    <style>
+        .con {z-index: 100;  transform: scale(1);  transition: transform 500ms;  }
+        .con:hover { transform: scale(1.05); transition: transform 500ms; z-index: 200; }
+        .con:hover .imgy{filter:brightness(70%);}
+        .con .hidden_t{display: none;}
+        .con:hover .hidden_t{display: block;}
+        a{ text-decoration-line: none;  color: black; }
+        a:hover{ color: skyblue; }
+    </style>
+{% endblock %}
+
 {% block content %}
- <div class="text-center ">
+    <div><img class="w-100 " style="height: 350px" src={% static "imgs/car_info_imgs/car_info.jpg" %}></div>
+    <div class=>
+        </div>
+        <!-- Blog STart -->
+            <div class="container outer-div" >
+                <div class="inner-div" style="margin: auto" >
+                    <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mb-5 " >
 
-      <img src="/static/imgs/blog.PNG">
+                        {% for i in Info_list %}
+                            <div class="col con "  >
+                            <div class="card  shadow "style="position: relative">
+                               <a href="{{ i.e_add }}" class="title post-meta fa-underline-none " target="_blank">
 
-     </div>
+                                   {% if i.e_add|split:'.'|second == 'naver' %}
+                                       {% if i.e_add|split2:'.'|first == 'blog' %}
+                                           <img src="{% static '/imgs/car_info_imgs/naver_blog.png' %}" class="imgy card-img card-img-top " alt="naver_blog">
+                                       {% elif i.e_add|split2:'.'|first == 'cafe' %}
+                                           <img src="{% static '/imgs/car_info_imgs/naver_cafe.png' %}" class="imgy card-img card-img-top " alt="naver_cafe">
+                                       {% endif %}
+                                   {% elif i.e_add|split2:'.'|second == 'tistory' %}
+                                       <img src="{% static '/imgs/car_info_imgs/Tistory1.png' %}" class="imgy card-img card-img-top " alt="Tistory">
+                                   {% elif i.e_add|split2:'.'|third == 'daum' %}
+                                       <img src="{% static '/imgs/car_info_imgs/daum_cafe.png' %}" class="imgy card-img card-img-top " alt="daum_cafe">
+                                   {% elif i.e_add|split2:'.'|second == 'daum' %}
+                                       <img src="{% static '/imgs/car_info_imgs/daum_blog.png' %}" class="imgy card-img card-img-top " alt="daum_blog">
+                                   {% else %}
+                                       <img src="{% static '/imgs/car_info_imgs/image_fail.png' %}" class="imgy card-img card-img-top " alt="image_fail">
+                                   {% endif %}
+                               </a>
+                                <p class=" hidden_t mt-4 ms-3 text-white  bi bi-calendar-check" style="position: absolute; ">&nbsp;data&nbsp;:&nbsp;{{ i.regdate|date:'Y-m-d' }}</p>
+                                <div class="card-body  p-4">
+                                  <h5 class="card-title text-right fw-bold "style="z-index:1200; margin: 10px 0">
+                                      <a href="{{ i.e_add }}" class="title post-meta mb-3" target="_blank">
+                                        <i class="bi bi-send " style="font-size:small"></i>  {{ i.title }}</a></h5>
+                                    </br>
+                                  <p class="card-text   text-end bi-person-square"  style="margin: 10px 0px">{{ i.member }}</p>
+                              </div>
+                            </div>
+                          </div>
+                        {% endfor %}
+
+
+
+
+                    </div><!--end col-->
+                </div>
+            </div>
+
 
 {% endblock %}
 

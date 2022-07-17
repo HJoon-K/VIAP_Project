@@ -4,23 +4,21 @@
         <div id="main">
         <div class="text-center ">
             <div>
-                <i class="bi bi-check-circle-fill text-success " style="font-size: 10rem"></i>
+                <i class="bi bi-check-circle-fill text-success " style="font-size: 15rem"></i>
                 <div class="display-2 text-black-50 mt-2">
                     <span class="text-black fw-bold">고객 문의</span> 접수가 완료되었습니다.
                 </div>
             </div>
 
-            <div class="display-4 text-black-50 mt-5 mb-5">
+            <div class="display-4 text-black m-5">
                 <div class="m-5">접수 된 정보를 확인해주세요. </div>
-                <div class="m-3">이름 : {{ q.qname }} </div>
-                <div class="m-3">전화번호 : {{ q.qphone }}</div>
-                <div class="m-3">이메일 : {{ q.qemail }}</div>
-                <div class="m-3">문의분류 : {{ q.qselect }}</div>
-                <div class="m-3">문의한 날짜 : {{ q.regdate }}</div>
+                <div class="m-3">성함 : {{ qq.name }} </div>
+                <div class="m-3">전화번호 : {{ qq.phone }}</div>
+                <div class="m-3">이메일 : {{ qq.email }}</div>
             </div>
 
             <div class="mb-5">
-                <a href="{% url 'index' %}"><button type="button" class="btn btn-primary" style="width: 20%; height: 20%">메인으로</button></a>
+                <a href="{% url 'index' %}"><button type="button" class="btn btn-primary" style="width: 30%;">메인으로</button></a>
             </div>
         </div>
     </div>
